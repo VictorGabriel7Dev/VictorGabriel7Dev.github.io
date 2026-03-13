@@ -1,0 +1,10 @@
+Developer: Victor Gabriel
+Contact: contato@victorgabriel.dev
+GitHub: https://github.com/VictorGabriel7Dev
+Discord: VictorGabriel.dev
+Telegram: https://t.me/VictorGabriel_Dev
+From: Brasil
+Last update: 2026-03-12
+Language: Portuguese (Brazil)
+Standards: HTML5, CSS3
+Hosted: GitHub Pages + Cloudflare
