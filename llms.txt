@@ -1,0 +1,21 @@
+# Victor Gabriel
+
+> Paz, amor e coding.
+
+Desenvolvedor brasileiro com foco em backend, infraestrutura Linux, desenvolvimento Android e software.
+
+## Tecnologias principais
+
+- Linguagens: Java, Kotlin, Python, C++, JavaScript, Perl, Lua, Bash
+- Infraestrutura: Linux (Debian, Fedora), Docker, Nginx, Apache, Cloudflare, iptables
+- Bancos de dados: MySQL, MariaDB, PostgreSQL, SQLite
+- Mobile: Android (Android Studio, Kotlin/Java)
+- DevOps: Git, GitHub Actions, Docker Compose, Make, CMake, Gradle, Maven
+
+## Contato
+
+- Site: https://victorgabriel.dev
+- GitHub: https://github.com/VictorGabriel7Dev
+- Discord: @VictorGabriel.dev
+- Telegram: https://t.me/VictorGabriel_Dev
+- E-mail: contato@victorgabriel.dev
