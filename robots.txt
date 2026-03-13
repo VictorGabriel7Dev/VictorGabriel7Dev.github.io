@@ -1,6 +1,12 @@
 User-agent: *
 Allow: /
+Allow: /.well-known/security.txt
+Allow: /humans.txt
+Allow: /index.html
+Allow: /llms.txt
+Allow: /paz-amor-e-coding.jpg
+Allow: /README.md
+Allow: /robots.txt
+Allow: /sitemap.xml
 
 Sitemap: https://victorgabriel.dev/sitemap.xml
-
-Crawl-delay: 1
