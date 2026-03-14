@@ -7,6 +7,7 @@ Allow: /llms.txt
 Allow: /paz-amor-e-coding.jpg
 Allow: /README.md
 Allow: /robots.txt
+Allow: /ef85b14c1e274bb297992f5875c5eb79.txt
 Allow: /sitemap.xml
 
 Sitemap: https://victorgabriel.dev/sitemap.xml
