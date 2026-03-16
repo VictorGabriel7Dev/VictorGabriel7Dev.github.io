@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /.well-known/security.txt
+Allow: /favicon.svg
 Allow: /humans.txt
 Allow: /index.html
 Allow: /llms.txt
