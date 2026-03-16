@@ -9,5 +9,7 @@ Allow: /README.md
 Allow: /robots.txt
 Allow: /ef85b14c1e274bb297992f5875c5eb79.txt
 Allow: /sitemap.xml
+Allow: /projetos/cambio-novadax/
+Allow: /projetos/cambio-novadax/index.html
 
 Sitemap: https://victorgabriel.dev/sitemap.xml
