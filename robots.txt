@@ -14,5 +14,7 @@ Allow: /ef85b14c1e274bb297992f5875c5eb79.txt
 Allow: /sitemap.xml
 Allow: /projetos/cambio-novadax/
 Allow: /projetos/cambio-novadax/index.html
+Allow: /projetos/telegram-antispam-bot/
+Allow: /projetos/telegram-antispam-bot/index.html
 
 Sitemap: https://victorgabriel.dev/sitemap.xml
