@@ -16,5 +16,7 @@ Allow: /projetos/cambio-novadax/
 Allow: /projetos/cambio-novadax/index.html
 Allow: /projetos/telegram-antispam-bot/
 Allow: /projetos/telegram-antispam-bot/index.html
+Allow: /projetos/webscraper-github-user/
+Allow: /projetos/webscraper-github-user/index.html
 
 Sitemap: https://victorgabriel.dev/sitemap.xml
