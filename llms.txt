@@ -15,6 +15,7 @@ Desenvolvedor brasileiro com foco em backend, infraestrutura Linux, desenvolvime
 ## Contato
 
 - Site: https://victorgabriel.dev
+- Site: https://victorgabriel.dev.br
 - GitHub: https://github.com/VictorGabriel7Dev
 - LinkedIn: https://linkedin.com/in/victor-gabriel-182a763b9/
 - Discord: @VictorGabriel.dev
