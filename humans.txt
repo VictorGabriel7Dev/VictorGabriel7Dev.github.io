@@ -1,5 +1,7 @@
 Developer: Victor Gabriel
 Contact: contato@victorgabriel.dev
+Site: https://victorgabriel.dev
+Site: https://victorgabriel.dev.br
 GitHub: https://github.com/VictorGabriel7Dev
 LinkedIn: https://linkedin.com/in/victor-gabriel-182a763b9/
 Discord: VictorGabriel.dev
