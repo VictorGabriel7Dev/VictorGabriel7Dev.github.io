@@ -19,5 +19,7 @@ Allow: /projetos/telegram-antispam-bot/
 Allow: /projetos/telegram-antispam-bot/index.html
 Allow: /projetos/webscraper-github-user/
 Allow: /projetos/webscraper-github-user/index.html
+Allow: /projetos/OpenFinance-Dashboard/
+Allow: /projetos/OpenFinance-Dashboard/index.html
 
 Sitemap: https://victorgabriel.dev/sitemap.xml
