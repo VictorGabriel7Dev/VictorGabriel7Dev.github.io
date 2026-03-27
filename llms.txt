@@ -1,17 +1,17 @@
 # Victor Gabriel
 
-> Infraestrutura | Back-end | Dados | IA | Linux Lover
+> Linux | Python | Back-end | API | Infra | Automação | Dados | IA
 > Paz, amor e coding.
 
-Desenvolvedor brasileiro com foco em backend, infraestrutura Linux, desenvolvimento Android e software.
+Desenvolvedor back-end, infraestrutura Linux, administrador de servidor dedicado e engenheiro de IA. Especializado em Python, Debian, API, SQL, automação de tarefas, tratamento de dados e engenharia de Inteligência Artificial.
 
 ## Tecnologias principais
 
-- Linguagens: Java, Kotlin, Python, C++, JavaScript, Perl, Lua, Bash
-- Infraestrutura: Linux (Debian, Fedora), Docker, Nginx, Apache, Cloudflare, iptables
-- Bancos de dados: MySQL, MariaDB, PostgreSQL, SQLite
-- Mobile: Android (Android Studio, Kotlin/Java)
-- DevOps: Git, GitHub Actions, Docker Compose, Make, CMake, Gradle, Maven
+- Python, Java, Kotlin, C++, JavaScript, Perl, Lua, Bash
+- Linux, Nginx, Apache, OpenSSL, NFTables, IPTables, FirewallD, OpenSSH, OpenSFTP, VNC, RDP
+- PostgreSQL, MySQL, MariaDB, SQLite
+- Apache Airflow, Cron
+- Git, GitHub, Docker
 
 ## Contato
 
