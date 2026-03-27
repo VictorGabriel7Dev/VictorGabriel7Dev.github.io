@@ -1,5 +1,5 @@
 Developer: Victor Gabriel
-Role: Linux | Python | Back-end | API | Infra | Automação | Dados | IA
+Role: Linux | Python | SQL | IA | API | Back-end | Infra | Automação
 Contact: contato@victorgabriel.dev
 Site: https://victorgabriel.dev
 Site: https://victorgabriel.dev.br
