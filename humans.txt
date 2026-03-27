@@ -1,5 +1,5 @@
 Developer: Victor Gabriel
-Jobs: Infraestrutura | Back-end | Dados | IA | Linux Lover
+Role: Linux | Python | Back-end | API | Infra | Automação | Dados | IA
 Contact: contato@victorgabriel.dev
 Site: https://victorgabriel.dev
 Site: https://victorgabriel.dev.br
