@@ -74,7 +74,7 @@
                     "Bash", "Java", "Kotlin", "C++", "JavaScript", "SQL",
                     "Perl", "Lua", "Docker", "Git", "GitHub", "OpenSFTP",
                     "OpenSSL", "OpenSSH", "MySQL", "MariaDB", "SQLite",
-					"Apache", "IPTables", "FirewallD", "VNC", "RDP", "MySQL"
+                    "Apache", "IPTables", "FirewallD", "VNC", "RDP"
                 ],
                 "sameAs": [
                     "https://victorgabriel.dev.br/",
@@ -105,193 +105,444 @@
     }
     </script>
     <style>
+        :root {
+
+            --color-text:          #24292e;
+            --color-text-muted:    #586069;
+            --color-text-faint:    #8b949e;
+            --color-link:          #0366d6;
+            --color-border:        #e1e4e8;
+
+            --glass-bg:            rgba(255, 255, 255, 0.72);
+            --glass-bg-light:      rgba(255, 255, 255, 0.60);
+            --glass-bg-bio:        rgba(255, 255, 255, 0.65);
+            --glass-border:        rgba(255, 255, 255, 0.90);
+            --glass-border-soft:   rgba(255, 255, 255, 0.85);
+            --glass-blur:          blur(14px);
+            --glass-blur-sm:       blur(12px);
+
+            --shadow-card:         0 4px 24px rgba(80, 80, 120, 0.08),
+                                   0 1px  4px rgba(80, 80, 120, 0.06);
+            --shadow-card-hover:   0 8px 32px rgba(80, 80, 120, 0.13);
+            --shadow-soft:         0 4px 20px rgba(80, 80, 120, 0.07);
+
+            --radius:              14px;
+            --radius-sm:            6px;
+            --radius-full:        100px;
+
+            --accent-verde:  linear-gradient(90deg, #1D9E75, #5DCAA5);
+            --accent-azul:   linear-gradient(90deg, #378ADD, #85B7EB);
+            --accent-roxo:   linear-gradient(90deg, #7F77DD, #AFA9EC);
+            --accent-amber:  linear-gradient(90deg, #BA7517, #EF9F27);
+
+            --space-xs:   4px;
+            --space-sm:   8px;
+            --space-md:  16px;
+            --space-lg:  24px;
+            --space-xl:  40px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
         html {
             min-height: 100%;
             background:
-                radial-gradient(ellipse at 10% 20%, #c7e8ff 0%, transparent 50%),
-                radial-gradient(ellipse at 90% 10%, #d4c5f9 0%, transparent 45%),
-                radial-gradient(ellipse at 80% 80%, #ffd6e7 0%, transparent 50%),
-                radial-gradient(ellipse at 20% 85%, #c3f4e0 0%, transparent 45%),
-                radial-gradient(ellipse at 55% 50%, #fff0c2 0%, transparent 55%),
+                radial-gradient(ellipse at 10%  20%, #c7e8ff 0%, transparent 50%),
+                radial-gradient(ellipse at 90%  10%, #d4c5f9 0%, transparent 45%),
+                radial-gradient(ellipse at 80%  80%, #ffd6e7 0%, transparent 50%),
+                radial-gradient(ellipse at 20%  85%, #c3f4e0 0%, transparent 45%),
+                radial-gradient(ellipse at 55%  50%, #fff0c2 0%, transparent 55%),
                 #eaf0fb;
-            background-attachment: fixed
+            background-attachment: fixed;
         }
+
         body {
             font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: var(--space-xl) 20px;
             line-height: 1.6;
-            color: #24292e
+            color: var(--color-text);
         }
-        .paz-amor-e-coding {
-            text-align: center;
-            margin-bottom: 30px
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: var(--space-xl) 0;
         }
-        .paz-amor-e-coding img {
-            width: 40%;
-            max-width: 300px;
-            border-radius: 8px
-        }
+
         h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin: 20px 0
+            margin: 0 0 var(--space-xs);
+            font-size: 2em;
         }
+
+        h3 {
+            margin-top: 0;
+        }
+
         blockquote {
             text-align: center;
             font-size: 1.2em;
             font-style: italic;
-            color: #586069;
+            color: var(--color-text-muted);
             margin: 20px 0;
             padding: 0;
-            border-left: none
+            border-left: none;
         }
-        .eu { text-align: center }
-        .eu a { color: #0366d6; text-decoration: none }
-        .eu a:hover { text-decoration: underline }
-        hr {
-            border: none;
-            border-top: 1px solid #e1e4e8;
-            margin: 40px 0
+
+        code {
+            background: rgba(175, 184, 193, 0.20);
+            border: 1px solid rgba(175, 184, 193, 0.30);
+            border-radius: var(--radius-sm);
+            padding: 2px 7px;
+            font-size: 0.88em;
+            color: var(--color-text);
         }
-        .a-flor-e-a-nausea {
-            text-align: center;
+
+        a {
+            color: var(--color-link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .fc {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .fc--row {
+            flex-direction: row;
+            gap: 12px;
+        }
+
+        .fc .float-box {
+            margin: 0;
+            width: fit-content;
+            max-width: 360px;
+        }
+
+        .float-box {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 22px 26px;
+            margin: var(--space-lg) 0;
+            box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .float-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+
+        .float-box.verde::before  { background: var(--accent-verde); }
+        .float-box.azul::before   { background: var(--accent-azul);  }
+        .float-box.roxo::before   { background: var(--accent-roxo);  }
+        .float-box.amber::before  { background: var(--accent-amber); }
+
+        .float-box-label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--color-text-faint);
+            margin-bottom: var(--space-sm);
+        }
+
+        .card--avatar {
+            padding: 16px 20px;
+        }
+
+        .card--avatar img {
+            display: block;
+            border-radius: var(--radius-sm);
+        }
+
+        .card--titulo {
+            padding: 16px 28px;
+        }
+
+        .card--titulo p {
+            margin: 0;
+            color: var(--color-text-muted);
+            font-size: 0.88em;
+            letter-spacing: 0.02em;
+        }
+
+        .card--tagline {
+            padding: 12px 24px;
+        }
+
+        .card--tagline p {
+            margin: 0;
             font-style: italic;
-            color: #586069;
-            margin: 40px 0
+            color: var(--color-text-muted);
+            font-size: 1em;
         }
+
+        .card--link {
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        .card--link a {
+            font-size: 0.95em;
+        }
+
+        .card--contato {
+            padding: 14px 24px;
+            text-align: center;
+        }
+
+        .card--secao {
+            padding: 10px 28px;
+            margin: 0 0 var(--space-md);
+        }
+
+        .card--secao span {
+            font-size: 1em;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+        }
+
+        .card--stack {
+            max-width: 400px;
+            margin: 0 auto var(--space-lg);
+        }
+
+        .card--parceiro {
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        .card--parceiro a {
+            font-size: 0.95em;
+        }
+
+        .bio-box {
+            background: var(--glass-bg-bio);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border-soft);
+            border-left: 4px solid #1D9E75;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            padding: 18px 24px;
+            margin: var(--space-lg) auto;
+            max-width: 400px;
+            box-shadow: var(--shadow-soft);
+            font-size: 1.05em;
+            color: #444d56;
+            text-align: left;
+        }
+
+        .a-flor-e-a-nausea {
+            background: var(--glass-bg-light);
+            backdrop-filter: var(--glass-blur-sm);
+            -webkit-backdrop-filter: var(--glass-blur-sm);
+            border: 1px solid var(--glass-border-soft);
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            margin: 30px auto;
+            max-width: 400px;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            gap: var(--space-md);
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .a-flor-e-a-nausea .quote-mark {
+            font-family: Georgia, serif;
+            font-size: 52px;
+            line-height: 1;
+            color: #d0d7de;
+            flex-shrink: 0;
+            margin-top: -8px;
+        }
+
+        .a-flor-e-a-nausea .quote-body {
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+
         .carlos-drummond-de-andrade {
             display: block;
             margin-top: 10px;
-            font-style: normal
+            font-style: normal;
         }
-        .selos { margin-bottom: 20px }
+
+        .eu {
+            text-align: center;
+        }
+
+        .selos {
+            margin-bottom: 20px;
+        }
+
         .selos img {
             margin: 2px 1px;
-            vertical-align: middle
+            vertical-align: middle;
+        }
+
+        article {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 22px 26px;
+            margin: var(--space-md) auto;
+            max-width: 400px;
+            box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        article::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            border-radius: var(--radius) var(--radius) 0 0;
+            background: var(--accent-roxo);
+        }
+
+        article:hover {
+            box-shadow: var(--shadow-card-hover);
+            transform: translateY(-2px);
+        }
+
+        article h3 a {
+            color: var(--color-link);
+        }
+
+        article p {
+            margin: 6px 0;
+        }
+
+        .parceiros {
+            display: flex;
+            gap: var(--space-lg);
+            justify-content: center;
+            margin: var(--space-md) 0;
+        }
+
+        .parceiros a {
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 24px 14px;
+            }
+
+            .fc--row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bio-box,
+            .a-flor-e-a-nausea,
+            article,
+            .card--stack {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="paz-amor-e-coding"><picture><source srcset="paz-amor-e-coding.webp" type="image/webp"><img src="paz-amor-e-coding.jpg" alt="Victor Gabriel" width="300" height="300" fetchpriority="high"></picture></div>
-    <h1>Victor Gabriel 🐧</h1>
-    <blockquote>Linux | Python | SQL | IA | API | Back-end | Infra | Automação<br>Paz, amor e coding.</blockquote>
-    <div class="eu"><a href="https://victorgabriel.dev">https://victorgabriel.dev</a></div>
-    <div class="eu"><a href="https://victorgabriel.dev.br">https://victorgabriel.dev.br</a></div>
-    <div class="eu"><strong>GitHub:</strong> <a href="https://github.com/VictorGabriel7Dev">@VictorGabriel7Dev</a></div>
-    <div class="eu"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/victorgabriel-dev">in/victorgabriel-dev</a></div>
-    <div class="eu"><strong>Discord:</strong> @VictorGabriel.dev</div>
-    <div class="eu"><strong>Telegram:</strong> <a href="https://t.me/VictorGabriel_Dev">@VictorGabriel_Dev</a></div>
-    <div class="eu"><strong>E-mail:</strong> <a href="mailto:contato@victorgabriel.dev">contato@victorgabriel.dev</a></div>
+    <div class="fc">
+        <div class="float-box verde card--avatar">
+            <picture>
+                <source srcset="paz-amor-e-coding.webp" type="image/webp">
+                <img src="paz-amor-e-coding.jpg" alt="Victor Gabriel" width="180" height="180" fetchpriority="high">
+            </picture>
+        </div>
+    </div>
+    <div class="fc">
+        <div class="float-box roxo card--titulo">
+            <h1>Victor Gabriel 🐧</h1>
+            <p>Linux · Python · SQL · IA · API · Back-end · Infra · Automação</p>
+        </div>
+    </div>
+    <div class="fc">
+        <div class="float-box verde card--tagline">
+            <p>Paz, amor e coding.</p>
+        </div>
+    </div>
+    <div class="fc fc--row">
+        <div class="float-box azul card--link">
+            <a href="https://victorgabriel.dev">https://victorgabriel.dev</a>
+        </div>
+        <div class="float-box azul card--link">
+            <a href="https://victorgabriel.dev.br">https://victorgabriel.dev.br</a>
+        </div>
+    </div>
+    <div class="fc">
+        <div class="float-box amber card--contato">
+            <div class="float-box-label">Contato</div>
+            <div class="eu"><strong>GitHub:</strong> <a href="https://github.com/VictorGabriel7Dev">@VictorGabriel7Dev</a></div>
+            <div class="eu"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/victorgabriel-dev">in/victorgabriel-dev</a></div>
+            <div class="eu"><strong>Discord:</strong> @VictorGabriel.dev</div>
+            <div class="eu"><strong>Telegram:</strong> <a href="https://t.me/VictorGabriel_Dev">@VictorGabriel_Dev</a></div>
+            <div class="eu"><strong>E-mail:</strong> <a href="mailto:contato@victorgabriel.dev">contato@victorgabriel.dev</a></div>
+        </div>
+    </div>
     <hr>
-	<blockquote>Desenvolvedor back-end, infraestrutura Linux, administrador de servidor dedicado e engenheiro de IA.<br>
-	Especializado em Python, Debian, API, SQL, automação de tarefas, tratamento de dados e engenharia de Inteligência Artificial.</blockquote>
-	<hr>
+    <div class="bio-box">
+        Desenvolvedor back-end, infraestrutura Linux, administrador de servidor dedicado e engenheiro de IA.<br>
+        Especializado em Python, Debian, API, SQL, automação de tarefas, tratamento de dados e engenharia de Inteligência Artificial.
+    </div>
+    <hr>
     <div class="a-flor-e-a-nausea">
-        <i>
+        <div class="quote-mark">"</div>
+        <div class="quote-body">
             Sua cor não se percebe.<br>
             Suas pétalas não se abrem.<br>
             Seu nome não está nos livros.<br>
             É feia. Mas é realmente uma flor.
-        </i>
-        <span class="carlos-drummond-de-andrade">— Carlos Drummond de Andrade, A flor e a náusea</span>
+            <span class="carlos-drummond-de-andrade">— Carlos Drummond de Andrade, A flor e a náusea</span>
+        </div>
     </div>
-    <p><a href="https://inovamind.dev" target="_blank">Inovamind.dev</a> | <a href="https://thalesfernandes.dev" target="_blank">ThalesFernandes.dev</a></p>
-    <hr>
-    <div class="selos">
-        <img src="https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white&style=flat" alt="C++">
-        <img src="https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white&style=flat" alt="Java">
-        <img src="https://img.shields.io/badge/-Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat" alt="Kotlin">
-        <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat" alt="Python">
-        <img src="https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white&style=flat" alt="Perl">
-        <img src="https://img.shields.io/badge/-Lua-2C2D72?logo=lua&logoColor=white&style=flat" alt="Lua">
-        <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat" alt="JavaScript">
-        <img src="https://img.shields.io/badge/-Bash-4EAA25?logo=gnubash&logoColor=white&style=flat" alt="Bash">
-        <img src="https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat" alt="HTML5">
-        <img src="https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat" alt="CSS3">
-        <img src="https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white&style=flat" alt="Markdown">
-        <img src="https://img.shields.io/badge/-JSON-000000?logo=json&logoColor=white&style=flat" alt="JSON">
-        <img src="https://img.shields.io/badge/-XML-005FAD?logoColor=white&style=flat" alt="XML">
-        <img src="https://img.shields.io/badge/-YAML-CB171E?logo=yaml&logoColor=white&style=flat" alt="YAML">
-        <img src="https://img.shields.io/badge/-TOML-9C4121?logo=toml&logoColor=white&style=flat" alt="TOML">
-        <img src="https://img.shields.io/badge/-Make-427819?logo=gnu&logoColor=white&style=flat" alt="Make">
-        <img src="https://img.shields.io/badge/-CMake-064F8C?logo=cmake&logoColor=white&style=flat" alt="CMake">
-        <img src="https://img.shields.io/badge/-Gradle-02303A?logo=gradle&logoColor=white&style=flat" alt="Gradle">
-        <img src="https://img.shields.io/badge/-Maven-C71A36?logo=apachemaven&logoColor=white&style=flat" alt="Maven">
-        <img src="https://img.shields.io/badge/-ProGuard-34A853?logo=android&logoColor=white&style=flat" alt="ProGuard">
-        <img src="https://img.shields.io/badge/-CPAN-39457E?logo=perl&logoColor=white&style=flat" alt="CPAN">
-        <img src="https://img.shields.io/badge/-Selenium-43B02A?logo=selenium&logoColor=white&style=flat" alt="Selenium">
-        <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white&style=flat" alt="Git">
-        <img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat" alt="GitHub">
-        <img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white&style=flat" alt="GitHub Actions">
-        <img src="https://img.shields.io/badge/-Vim-019733?logo=vim&logoColor=white&style=flat" alt="Vim">
-        <img src="https://img.shields.io/badge/-Nano-440077?logoColor=white&style=flat" alt="Nano">
-        <img src="https://img.shields.io/badge/-cURL-073551?logo=curl&logoColor=white&style=flat" alt="cURL">
-        <img src="https://img.shields.io/badge/-Wget-333333?logoColor=white&style=flat" alt="Wget">
-        <img src="https://img.shields.io/badge/-FFmpeg-007808?logo=ffmpeg&logoColor=white&style=flat" alt="FFmpeg">
-        <img src="https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black&style=flat" alt="Linux">
-        <img src="https://img.shields.io/badge/-Debian-A81D33?logo=debian&logoColor=white&style=flat" alt="Debian">
-        <img src="https://img.shields.io/badge/-Fedora-51A2DA?logo=fedora&logoColor=white&style=flat" alt="Fedora">
-        <img src="https://img.shields.io/badge/-KDE-1D99F3?logo=kde&logoColor=white&style=flat" alt="KDE">
-        <img src="https://img.shields.io/badge/-LXDE-A4A4A4?logo=linux&logoColor=white&style=flat" alt="LXDE">
-        <img src="https://img.shields.io/badge/-APT-A80030?logo=debian&logoColor=white&style=flat" alt="APT">
-        <img src="https://img.shields.io/badge/-DNF%2FYUM-51A2DA?logo=fedora&logoColor=white&style=flat" alt="DNF/YUM">
-        <img src="https://img.shields.io/badge/-RPM-EE0000?logo=redhat&logoColor=white&style=flat" alt="RPM">
-        <img src="https://img.shields.io/badge/-DEB-A81D33?logo=debian&logoColor=white&style=flat" alt="DEB">
-        <img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat" alt="Docker">
-        <img src="https://img.shields.io/badge/-Docker%20Compose-2496ED?logo=docker&logoColor=white&style=flat" alt="Docker Compose">
-        <img src="https://img.shields.io/badge/-KVM-333333?logo=linux&logoColor=white&style=flat" alt="KVM">
-        <img src="https://img.shields.io/badge/-OpenVZ-EA7400?logo=openvz&logoColor=white&style=flat" alt="OpenVZ">
-        <img src="https://img.shields.io/badge/-Nginx-009639?logo=nginx&logoColor=white&style=flat" alt="Nginx">
-        <img src="https://img.shields.io/badge/-Apache-D22128?logo=apache&logoColor=white&style=flat" alt="Apache">
-        <img src="https://img.shields.io/badge/-lighttpd-0A0A0A?logo=lighttpd&logoColor=white&style=flat" alt="lighttpd">
-        <img src="https://img.shields.io/badge/-CGI-333333?logoColor=white&style=flat" alt="CGI">
-        <img src="https://img.shields.io/badge/-FastCGI-333333?logoColor=white&style=flat" alt="FastCGI">
-        <img src="https://img.shields.io/badge/-Uvicorn-499848?logo=gunicorn&logoColor=white&style=flat" alt="Uvicorn">
-        <img src="https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white&style=flat" alt="FastAPI">
-        <img src="https://img.shields.io/badge/-Apache%20Airflow-017CEE?logo=apacheairflow&logoColor=white&style=flat" alt="Apache Airflow">
-        <img src="https://img.shields.io/badge/-Cron-4EAA25?logo=gnubash&logoColor=white&style=flat" alt="Cron">
-        <img src="https://img.shields.io/badge/-Agno-000000?logo=anthropic&logoColor=white&style=flat" alt="Agno">
-        <img src="https://img.shields.io/badge/-cPanel-FF6C2C?logo=cpanel&logoColor=white&style=flat" alt="cPanel">
-        <img src="https://img.shields.io/badge/-Cloudflare-F38020?logo=cloudflare&logoColor=white&style=flat" alt="Cloudflare">
-        <img src="https://img.shields.io/badge/-iptables-333333?logo=linux&logoColor=white&style=flat" alt="iptables">
-        <img src="https://img.shields.io/badge/-nftables-333333?logo=linux&logoColor=white&style=flat" alt="nftables">
-        <img src="https://img.shields.io/badge/-Tor-7D4698?logo=torproject&logoColor=white&style=flat" alt="Tor">
-        <img src="https://img.shields.io/badge/-Onion-4A2060?logo=torproject&logoColor=white&style=flat" alt="Onion">
-        <img src="https://img.shields.io/badge/-SSH-333333?logo=openssh&logoColor=white&style=flat" alt="SSH">
-		<img src="https://img.shields.io/badge/-SFTP-333333?logo=opensftp&logoColor=white&style=flat" alt="SFTP">
-        <img src="https://img.shields.io/badge/-VNC-333333?logoColor=white&style=flat" alt="VNC">
-        <img src="https://img.shields.io/badge/-RDP-0078D4?logo=windows&logoColor=white&style=flat" alt="RDP">
-        <img src="https://img.shields.io/badge/-Netdata-00AB44?logo=netdata&logoColor=white&style=flat" alt="Netdata">
-        <img src="https://img.shields.io/badge/-Monitorix-333333?logo=linux&logoColor=white&style=flat" alt="Monitorix">
-        <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=flat" alt="MySQL">
-        <img src="https://img.shields.io/badge/-MariaDB-003545?logo=mariadb&logoColor=white&style=flat" alt="MariaDB">
-        <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?logo=postgresql&logoColor=white&style=flat" alt="PostgreSQL">
-        <img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=flat" alt="SQLite">
-        <img src="https://img.shields.io/badge/-Android-34A853?logo=android&logoColor=white&style=flat" alt="Android">
-        <img src="https://img.shields.io/badge/-Android%20Studio-3DDC84?logo=androidstudio&logoColor=white&style=flat" alt="Android Studio">
-        <img src="https://img.shields.io/badge/-Telegram-26A5E4?logo=telegram&logoColor=white&style=flat" alt="Telegram">
-        <img src="https://img.shields.io/badge/-Discord-5865F2?logo=discord&logoColor=white&style=flat" alt="Discord">
-        <img src="https://img.shields.io/badge/-WhatsApp-25D366?logo=whatsapp&logoColor=white&style=flat" alt="WhatsApp">
-        <img src="https://img.shields.io/badge/-Facebook-0866FF?logo=facebook&logoColor=white&style=flat" alt="Facebook">
-        <img src="https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=white&style=flat" alt="Instagram">
-        <img src="https://img.shields.io/badge/-Mercado%20Livre-FFE600?logo=mercadolibre&logoColor=black&style=flat" alt="Mercado Livre">
-        <img src="https://img.shields.io/badge/-Mercado%20Pago-00B1EA?logo=mercadopago&logoColor=white&style=flat" alt="Mercado Pago">
+    <div class="fc fc--row">
+        <div class="float-box amber card--parceiro">
+            <a href="https://inovamind.dev" target="_blank">Inovamind.dev</a>
+        </div>
+        <div class="float-box amber card--parceiro">
+            <a href="https://thalesfernandes.dev" target="_blank">ThalesFernandes.dev</a>
+        </div>
     </div>
     <hr>
-    <h2>Projetos</h2>
+    <div class="fc">
+        <div class="float-box roxo card--secao">
+            <span>Projetos</span>
+        </div>
+    </div>
     <article>
         <h3><a href="https://victorgabriel.dev/projetos/cambio-novadax">Câmbio NovaDax</a></h3>
         <p>Consultor de cotações e custos de envio de criptomoedas via NovaDax, direto no terminal.<br>
-          Calcula cotação atual, taxa de rede e o custo real para comprar e enviar qualquer cripto.</p>
+           Calcula cotação atual, taxa de rede e o custo real para comprar e enviar qualquer cripto.</p>
         <p><code>Python</code> · <code>CLI</code> · <code>Zero dependências</code> · <code>AGPL-3.0</code></p>
         <p><a href="https://victorgabriel.dev/projetos/cambio-novadax">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/cambio-novadax">💻 GitHub</a></p>
     </article>
     <article>
         <h3><a href="https://victorgabriel.dev/projetos/telegram-antispam-bot">Telegram Anti Spam Bot</a></h3>
         <p>Bot de moderação anti-spam para grupos do Telegram.<br>
-          Anti-spam moderation bot for Telegram groups.</p>
+           Anti-spam moderation bot for Telegram groups.</p>
         <p><code>Python</code> · <code>Telegram</code> · <code>Telethon MTProto</code> · <code>AGPL-3.0</code></p>
         <p><a href="https://victorgabriel.dev/projetos/telegram-antispam-bot">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/telegram-antispam-bot">💻 GitHub</a></p>
     </article>
@@ -307,5 +558,89 @@
         <p><code>C++</code> · <code>OpenFinance</code> · <code>Linux</code> · <code>Windows</code> · <code>Desktop</code></p>
         <p><a href="https://victorgabriel.dev/projetos/OpenFinance-Dashboard">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/OpenFinance-Dashboard">💻 GitHub</a></p>
     </article>
+    <hr>
+    <div class="float-box azul card--stack">
+        <div class="float-box-label">Stack &amp; Ferramentas</div>
+        <div class="selos">
+            <img src="https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white&style=flat" alt="C++">
+            <img src="https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white&style=flat" alt="Java">
+            <img src="https://img.shields.io/badge/-Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat" alt="Kotlin">
+            <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat" alt="Python">
+            <img src="https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white&style=flat" alt="Perl">
+            <img src="https://img.shields.io/badge/-Lua-2C2D72?logo=lua&logoColor=white&style=flat" alt="Lua">
+            <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat" alt="JavaScript">
+            <img src="https://img.shields.io/badge/-Bash-4EAA25?logo=gnubash&logoColor=white&style=flat" alt="Bash">
+            <img src="https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat" alt="HTML5">
+            <img src="https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat" alt="CSS3">
+            <img src="https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white&style=flat" alt="Markdown">
+            <img src="https://img.shields.io/badge/-JSON-000000?logo=json&logoColor=white&style=flat" alt="JSON">
+            <img src="https://img.shields.io/badge/-XML-005FAD?logoColor=white&style=flat" alt="XML">
+            <img src="https://img.shields.io/badge/-YAML-CB171E?logo=yaml&logoColor=white&style=flat" alt="YAML">
+            <img src="https://img.shields.io/badge/-TOML-9C4121?logo=toml&logoColor=white&style=flat" alt="TOML">
+            <img src="https://img.shields.io/badge/-Make-427819?logo=gnu&logoColor=white&style=flat" alt="Make">
+            <img src="https://img.shields.io/badge/-CMake-064F8C?logo=cmake&logoColor=white&style=flat" alt="CMake">
+            <img src="https://img.shields.io/badge/-Gradle-02303A?logo=gradle&logoColor=white&style=flat" alt="Gradle">
+            <img src="https://img.shields.io/badge/-Maven-C71A36?logo=apachemaven&logoColor=white&style=flat" alt="Maven">
+            <img src="https://img.shields.io/badge/-ProGuard-34A853?logo=android&logoColor=white&style=flat" alt="ProGuard">
+            <img src="https://img.shields.io/badge/-CPAN-39457E?logo=perl&logoColor=white&style=flat" alt="CPAN">
+            <img src="https://img.shields.io/badge/-Selenium-43B02A?logo=selenium&logoColor=white&style=flat" alt="Selenium">
+            <img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white&style=flat" alt="Git">
+            <img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat" alt="GitHub">
+            <img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white&style=flat" alt="GitHub Actions">
+            <img src="https://img.shields.io/badge/-Vim-019733?logo=vim&logoColor=white&style=flat" alt="Vim">
+            <img src="https://img.shields.io/badge/-Nano-440077?logoColor=white&style=flat" alt="Nano">
+            <img src="https://img.shields.io/badge/-cURL-073551?logo=curl&logoColor=white&style=flat" alt="cURL">
+            <img src="https://img.shields.io/badge/-Wget-333333?logoColor=white&style=flat" alt="Wget">
+            <img src="https://img.shields.io/badge/-FFmpeg-007808?logo=ffmpeg&logoColor=white&style=flat" alt="FFmpeg">
+            <img src="https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black&style=flat" alt="Linux">
+            <img src="https://img.shields.io/badge/-Debian-A81D33?logo=debian&logoColor=white&style=flat" alt="Debian">
+            <img src="https://img.shields.io/badge/-Fedora-51A2DA?logo=fedora&logoColor=white&style=flat" alt="Fedora">
+            <img src="https://img.shields.io/badge/-KDE-1D99F3?logo=kde&logoColor=white&style=flat" alt="KDE">
+            <img src="https://img.shields.io/badge/-LXDE-A4A4A4?logo=linux&logoColor=white&style=flat" alt="LXDE">
+            <img src="https://img.shields.io/badge/-APT-A80030?logo=debian&logoColor=white&style=flat" alt="APT">
+            <img src="https://img.shields.io/badge/-DNF%2FYUM-51A2DA?logo=fedora&logoColor=white&style=flat" alt="DNF/YUM">
+            <img src="https://img.shields.io/badge/-RPM-EE0000?logo=redhat&logoColor=white&style=flat" alt="RPM">
+            <img src="https://img.shields.io/badge/-DEB-A81D33?logo=debian&logoColor=white&style=flat" alt="DEB">
+            <img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat" alt="Docker">
+            <img src="https://img.shields.io/badge/-Docker%20Compose-2496ED?logo=docker&logoColor=white&style=flat" alt="Docker Compose">
+            <img src="https://img.shields.io/badge/-KVM-333333?logo=linux&logoColor=white&style=flat" alt="KVM">
+            <img src="https://img.shields.io/badge/-OpenVZ-EA7400?logo=openvz&logoColor=white&style=flat" alt="OpenVZ">
+            <img src="https://img.shields.io/badge/-Nginx-009639?logo=nginx&logoColor=white&style=flat" alt="Nginx">
+            <img src="https://img.shields.io/badge/-Apache-D22128?logo=apache&logoColor=white&style=flat" alt="Apache">
+            <img src="https://img.shields.io/badge/-lighttpd-0A0A0A?logo=lighttpd&logoColor=white&style=flat" alt="lighttpd">
+            <img src="https://img.shields.io/badge/-CGI-333333?logoColor=white&style=flat" alt="CGI">
+            <img src="https://img.shields.io/badge/-FastCGI-333333?logoColor=white&style=flat" alt="FastCGI">
+            <img src="https://img.shields.io/badge/-Uvicorn-499848?logo=gunicorn&logoColor=white&style=flat" alt="Uvicorn">
+            <img src="https://img.shields.io/badge/-FastAPI-009688?logo=fastapi&logoColor=white&style=flat" alt="FastAPI">
+            <img src="https://img.shields.io/badge/-Apache%20Airflow-017CEE?logo=apacheairflow&logoColor=white&style=flat" alt="Apache Airflow">
+            <img src="https://img.shields.io/badge/-Cron-4EAA25?logo=gnubash&logoColor=white&style=flat" alt="Cron">
+            <img src="https://img.shields.io/badge/-Agno-000000?logo=anthropic&logoColor=white&style=flat" alt="Agno">
+            <img src="https://img.shields.io/badge/-cPanel-FF6C2C?logo=cpanel&logoColor=white&style=flat" alt="cPanel">
+            <img src="https://img.shields.io/badge/-Cloudflare-F38020?logo=cloudflare&logoColor=white&style=flat" alt="Cloudflare">
+            <img src="https://img.shields.io/badge/-iptables-333333?logo=linux&logoColor=white&style=flat" alt="iptables">
+            <img src="https://img.shields.io/badge/-nftables-333333?logo=linux&logoColor=white&style=flat" alt="nftables">
+            <img src="https://img.shields.io/badge/-Tor-7D4698?logo=torproject&logoColor=white&style=flat" alt="Tor">
+            <img src="https://img.shields.io/badge/-Onion-4A2060?logo=torproject&logoColor=white&style=flat" alt="Onion">
+            <img src="https://img.shields.io/badge/-SSH-333333?logo=openssh&logoColor=white&style=flat" alt="SSH">
+            <img src="https://img.shields.io/badge/-SFTP-333333?logo=opensftp&logoColor=white&style=flat" alt="SFTP">
+            <img src="https://img.shields.io/badge/-VNC-333333?logoColor=white&style=flat" alt="VNC">
+            <img src="https://img.shields.io/badge/-RDP-0078D4?logo=windows&logoColor=white&style=flat" alt="RDP">
+            <img src="https://img.shields.io/badge/-Netdata-00AB44?logo=netdata&logoColor=white&style=flat" alt="Netdata">
+            <img src="https://img.shields.io/badge/-Monitorix-333333?logo=linux&logoColor=white&style=flat" alt="Monitorix">
+            <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=flat" alt="MySQL">
+            <img src="https://img.shields.io/badge/-MariaDB-003545?logo=mariadb&logoColor=white&style=flat" alt="MariaDB">
+            <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?logo=postgresql&logoColor=white&style=flat" alt="PostgreSQL">
+            <img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=flat" alt="SQLite">
+            <img src="https://img.shields.io/badge/-Android-34A853?logo=android&logoColor=white&style=flat" alt="Android">
+            <img src="https://img.shields.io/badge/-Android%20Studio-3DDC84?logo=androidstudio&logoColor=white&style=flat" alt="Android Studio">
+            <img src="https://img.shields.io/badge/-Telegram-26A5E4?logo=telegram&logoColor=white&style=flat" alt="Telegram">
+            <img src="https://img.shields.io/badge/-Discord-5865F2?logo=discord&logoColor=white&style=flat" alt="Discord">
+            <img src="https://img.shields.io/badge/-WhatsApp-25D366?logo=whatsapp&logoColor=white&style=flat" alt="WhatsApp">
+            <img src="https://img.shields.io/badge/-Facebook-0866FF?logo=facebook&logoColor=white&style=flat" alt="Facebook">
+            <img src="https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=white&style=flat" alt="Instagram">
+            <img src="https://img.shields.io/badge/-Mercado%20Livre-FFE600?logo=mercadolibre&logoColor=black&style=flat" alt="Mercado Livre">
+            <img src="https://img.shields.io/badge/-Mercado%20Pago-00B1EA?logo=mercadopago&logoColor=white&style=flat" alt="Mercado Pago">
+        </div>
+    </div>
 </body>
 </html>
