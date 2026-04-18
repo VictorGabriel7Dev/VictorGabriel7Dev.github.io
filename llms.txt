@@ -1,6 +1,6 @@
 # Victor Gabriel
 
-> Linux | Python | SQL | IA | API | Back-end | Infra | Automação
+> DevOps | SRE | Infra | Linux | Back-end | Python | PostgreSQL | IA/RAG
 > Paz, amor e coding.
 
 Desenvolvedor back-end, infraestrutura Linux, administrador de servidor dedicado e engenheiro de IA.
