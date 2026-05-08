@@ -15,7 +15,7 @@ Atuo em cinco frentes integradas da engenharia: software, dados, sistemas, segur
 ## Contato
 
 - Site: https://victorgabriel.dev
-- Site: https://victorgabriel.dev.br
+- Mirror: https://victorgabriel.dev.br
 - GitHub: https://github.com/VictorGabriel7Dev
 - LinkedIn: https://www.linkedin.com/in/victorgabriel-dev
 - Discord: @VictorGabriel.dev
