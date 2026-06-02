@@ -1,3 +1,4 @@
-Contact: mailto:contato@victorgabriel.dev
-Preferred-Languages: pt-BR
+Contact: mailto:security@inovamind.dev
+Expires: 2027-05-12T00:00:00.000Z
+Preferred-Languages: pt-BR, en
 Canonical: https://victorgabriel.dev/.well-known/security.txt

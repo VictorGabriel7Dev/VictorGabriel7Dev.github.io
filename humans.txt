@@ -2,7 +2,6 @@ Developer: Victor Gabriel
 Role: Engenheiro de Software | Engenheiro de IA | Engenheiro de Dados | Engenheiro de Segurança | Especialista Linux
 Contact: contato@victorgabriel.dev
 Site: https://victorgabriel.dev
-Mirror: https://victorgabriel.dev.br
 GitHub: https://github.com/VictorGabriel7Dev
 LinkedIn: https://www.linkedin.com/in/victorgabriel-dev
 Discord: VictorGabriel.dev
@@ -12,4 +11,4 @@ From: Brasil
 Last update: 2026-05-07
 Language: Portuguese (Brazil)
 Standards: HTML5, CSS3
-Hosted: GitHub Pages + Cloudflare
+Hosted: Debian + Nginx + Cloudflare
