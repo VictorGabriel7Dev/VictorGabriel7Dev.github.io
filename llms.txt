@@ -6,11 +6,12 @@ Atuo em cinco frentes integradas da engenharia: software, dados, sistemas, segur
 
 ## Tecnologias principais
 
-- Python, Java, Kotlin, C++, JavaScript, Perl, Lua, Bash
+- Python, Java, Kotlin, Swift, C++, JavaScript, Perl, Lua, Bash
 - Linux, Nginx, Apache, OpenSSL, NFTables, IPTables, FirewallD, OpenSSH, OpenSFTP, VNC, RDP
 - PostgreSQL, MySQL, MariaDB, SQLite
 - Apache Airflow, Cron
-- Git, GitHub, Docker
+- Git, GitHub, Forgejo, Forgejo Actions, Docker
+- Claude Code, pytest, Ruff
 
 ## Contato
 
