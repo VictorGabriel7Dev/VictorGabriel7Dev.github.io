@@ -176,6 +176,26 @@ Atuo em cinco frentes integradas da engenharia: software, dados, sistemas, segur
 
 ---
 
+## Trabalhos
+
+### [Imóveis Lucas](https://www.imoveislucas.com.br)
+
+Site e catálogo de imóveis de alto padrão — casas em condomínio em Lagoa Santa (MG) e apartamentos em São Paulo — com painel administrativo próprio para gerenciar os anúncios. Desenvolvido na Inovamind.
+
+`React` · `FastAPI` · `PostgreSQL` · `Nginx` · `Cloudflare`
+
+[🌐 imoveislucas.com.br](https://www.imoveislucas.com.br) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
+
+### [Itabira e Região](https://itabiraeregiao.com.br)
+
+Portal que reúne, em um só lugar e atualizado automaticamente, as notícias publicadas pelos veículos de Itabira (MG) e região — com espaço para os leitores sugerirem pautas. Desenvolvido na Inovamind.
+
+`Python` · `FastAPI` · `PostgreSQL` · `RSS/Scraping` · `Nginx` · `Cloudflare`
+
+[🌐 itabiraeregiao.com.br](https://itabiraeregiao.com.br) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
+
+---
+
 ## Projetos
 
 ### [Câmbio NovaDax](https://victorgabriel.dev/projetos/cambio-novadax)
