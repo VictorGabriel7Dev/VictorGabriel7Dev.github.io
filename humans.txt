@@ -8,7 +8,7 @@ Discord: VictorGabriel.dev
 Telegram: https://t.me/VictorGabriel_Dev
 Instagram: https://www.instagram.com/VictorGabriel_Dev
 From: Brasil
-Last update: 2026-05-07
+Last update: 2026-06-13
 Language: Portuguese (Brazil)
 Standards: HTML5, CSS3
 Hosted: Debian + Nginx + Cloudflare
