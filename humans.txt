@@ -1,5 +1,5 @@
 Developer: Victor Gabriel
-Role: Engenheiro de Software | Engenheiro de IA | Engenheiro de Dados | Engenheiro de Segurança | Especialista Linux
+Role: Arquiteto de Soluções & Engenheiro Full-Cycle | Software · IA · Infra · Segurança | Especialista Linux
 Contact: contato@victorgabriel.dev
 Site: https://victorgabriel.dev
 GitHub: https://github.com/VictorGabriel7Dev
