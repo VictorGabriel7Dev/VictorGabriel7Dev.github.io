@@ -1,0 +1,18 @@
+Third-Party Licenses — victorgabriel.dev
+=========================================
+
+Componentes de terceiros embutidos/servidos por este site. O conteúdo próprio do
+site é coberto pelo LICENSE proprietário da Inovamind; as atribuições exigidas
+pelos componentes open-source ficam retidas neste arquivo (os arquivos servidos
+não carregam comentários, por política do repo).
+
+------------------------------------------------------------
+Inter — fonte (fonts/inter.woff2)
+Licença: SIL Open Font License 1.1
+Copyright © 2016-2020 The Inter Project Authors (https://github.com/rsms/inter)
+
+------------------------------------------------------------
+Space Grotesk — fonte (fonts/space-grotesk.woff2)
+Licença: SIL Open Font License 1.1
+Copyright © 2020 The Space Grotesk Project Authors
+(https://github.com/floriankarsten/space-grotesk)

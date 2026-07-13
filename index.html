@@ -7,7 +7,7 @@
     <title>Victor Gabriel — Arquiteto de Soluções & Engenheiro Full-Cycle</title>
     <meta name="description" content="Arquiteto de Soluções &amp; Engenheiro Full-Cycle: software, IA, infra, segurança e dados em ambientes Linux. 23 anos de prática construindo sistemas inteiros, do código ao firewall, com auditoria recorrente e documentação como fonte de verdade.">
     <meta name="author" content="Victor Gabriel">
-    <meta name="keywords" content="Victor Gabriel Dev, Victor Gabriel Desenvolvedor, Victor Gabriel Python, Victor Gabriel Linux, Victor Gabriel IA, Victor Gabriel Software, Victor Gabriel Sistemas, Victor Gabriel Cibersegurança, Inovamind Dev">
+    <meta name="keywords" content="Victor Gabriel Dev, Victor Gabriel Desenvolvedor, Victor Gabriel Python, Victor Gabriel Linux, Victor Gabriel IA, Victor Gabriel Software, Victor Gabriel Sistemas, Victor Gabriel Cibersegurança, Victor Gabriel Infra, Victor Gabriel Soluções, Inovamind Dev">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
@@ -20,10 +20,12 @@
     <meta property="og:description" content="Arquiteto de Soluções &amp; Engenheiro Full-Cycle: software, IA, infra, segurança e dados em ambientes Linux. 23 anos de prática construindo sistemas inteiros, do código ao firewall, com auditoria recorrente e documentação como fonte de verdade.">
     <meta property="og:image" content="https://victorgabriel.dev/paz-amor-e-coding.jpg">
     <meta property="og:image:alt" content="Victor Gabriel — Arquiteto de Soluções & Engenheiro Full-Cycle | Software · IA · Infra · Segurança | Especialista Linux">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
     <meta property="profile:first_name" content="Victor">
     <meta property="profile:last_name" content="Gabriel">
     <meta property="profile:username" content="VictorGabriel7Dev">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Victor Gabriel — Arquiteto de Soluções & Engenheiro Full-Cycle | Software · IA · Infra · Segurança | Especialista Linux">
     <meta name="twitter:description" content="Arquiteto de Soluções &amp; Engenheiro Full-Cycle: software, IA, infra, segurança e dados em ambientes Linux. 23 anos de prática construindo sistemas inteiros, do código ao firewall, com auditoria recorrente e documentação como fonte de verdade.">
     <meta name="twitter:image" content="https://victorgabriel.dev/paz-amor-e-coding.jpg">
@@ -43,14 +45,18 @@
     <link rel="preconnect" href="https://img.shields.io">
     <link rel="dns-prefetch" href="https://img.shields.io">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <meta name="theme-color" content="#f5f5f7">
-    <meta name="color-scheme" content="light">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css">
+    <meta name="theme-color" content="#070B18">
+    <meta name="color-scheme" content="dark">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Victor Gabriel">
     <meta name="application-name" content="Victor Gabriel">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="msapplication-TileColor" content="#f5f5f7">
+    <meta name="msapplication-TileColor" content="#070B18">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -69,6 +75,8 @@
                     "name": "Brasil"
                 },
                 "knowsAbout": [
+                    "Arquitetura de Soluções", "Engenharia Full-Cycle",
+                    "Engenharia de Infraestrutura",
                     "Desenvolvimento de Software", "Engenharia de Software",
                     "Inteligência Artificial", "Engenharia de Dados",
                     "Cibersegurança", "Segurança da Informação",
@@ -109,473 +117,132 @@
         ]
     }
     </script>
-    <style>
-        :root {
-
-            --color-text:          #24292e;
-            --color-text-muted:    #586069;
-            --color-text-faint:    #8b949e;
-            --color-link:          #0366d6;
-            --color-border:        #e1e4e8;
-
-            --glass-bg:            rgba(255, 255, 255, 0.72);
-            --glass-bg-light:      rgba(255, 255, 255, 0.60);
-            --glass-bg-bio:        rgba(255, 255, 255, 0.65);
-            --glass-border:        rgba(255, 255, 255, 0.90);
-            --glass-border-soft:   rgba(255, 255, 255, 0.85);
-            --glass-blur:          blur(14px);
-            --glass-blur-sm:       blur(12px);
-
-            --shadow-card:         0 4px 24px rgba(80, 80, 120, 0.08),
-                                   0 1px  4px rgba(80, 80, 120, 0.06);
-            --shadow-card-hover:   0 8px 32px rgba(80, 80, 120, 0.13);
-            --shadow-soft:         0 4px 20px rgba(80, 80, 120, 0.07);
-
-            --radius:              14px;
-            --radius-sm:            6px;
-            --radius-full:        100px;
-
-            --accent-verde:  linear-gradient(90deg, #1D9E75, #5DCAA5);
-            --accent-azul:   linear-gradient(90deg, #378ADD, #85B7EB);
-            --accent-roxo:   linear-gradient(90deg, #7F77DD, #AFA9EC);
-            --accent-amber:  linear-gradient(90deg, #BA7517, #EF9F27);
-
-            --space-xs:   4px;
-            --space-sm:   8px;
-            --space-md:  16px;
-            --space-lg:  24px;
-            --space-xl:  40px;
-        }
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
-        html {
-            min-height: 100%;
-            background:
-                radial-gradient(ellipse at 10%  20%, #c7e8ff 0%, transparent 50%),
-                radial-gradient(ellipse at 90%  10%, #d4c5f9 0%, transparent 45%),
-                radial-gradient(ellipse at 80%  80%, #ffd6e7 0%, transparent 50%),
-                radial-gradient(ellipse at 20%  85%, #c3f4e0 0%, transparent 45%),
-                radial-gradient(ellipse at 55%  50%, #fff0c2 0%, transparent 55%),
-                #eaf0fb;
-            background-attachment: fixed;
-        }
-
-        body {
-            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: var(--space-xl) 20px;
-            line-height: 1.6;
-            color: var(--color-text);
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid var(--color-border);
-            margin: var(--space-xl) 0;
-        }
-
-        h1 {
-            margin: 0 0 var(--space-xs);
-            font-size: 2em;
-        }
-
-        h3 {
-            margin-top: 0;
-        }
-
-        blockquote {
-            text-align: center;
-            font-size: 1.2em;
-            font-style: italic;
-            color: var(--color-text-muted);
-            margin: 20px 0;
-            padding: 0;
-            border-left: none;
-        }
-
-        code {
-            background: rgba(175, 184, 193, 0.20);
-            border: 1px solid rgba(175, 184, 193, 0.30);
-            border-radius: var(--radius-sm);
-            padding: 2px 7px;
-            font-size: 0.88em;
-            color: var(--color-text);
-        }
-
-        a {
-            color: var(--color-link);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .fc {
-            display: flex;
-            justify-content: center;
-            margin: 10px 0;
-        }
-
-        .fc--row {
-            flex-direction: row;
-            gap: 12px;
-        }
-
-        .fc .float-box {
-            margin: 0;
-            width: fit-content;
-            max-width: 360px;
-        }
-
-        .float-box {
-            background: var(--glass-bg);
-            backdrop-filter: var(--glass-blur);
-            -webkit-backdrop-filter: var(--glass-blur);
-            border: 1px solid var(--glass-border);
-            border-radius: var(--radius);
-            padding: 22px 26px;
-            margin: var(--space-lg) 0;
-            box-shadow: var(--shadow-card);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .float-box::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            border-radius: var(--radius) var(--radius) 0 0;
-        }
-
-        .float-box.verde::before  { background: var(--accent-verde); }
-        .float-box.azul::before   { background: var(--accent-azul);  }
-        .float-box.roxo::before   { background: var(--accent-roxo);  }
-        .float-box.amber::before  { background: var(--accent-amber); }
-
-        .float-box-label {
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--color-text-faint);
-            margin-bottom: var(--space-sm);
-        }
-
-        .card--avatar {
-            padding: 16px 20px;
-        }
-
-        .card--avatar img {
-            display: block;
-            border-radius: var(--radius-sm);
-        }
-
-        .card--titulo {
-            padding: 16px 28px;
-        }
-
-        .card--titulo p {
-            margin: 0;
-            color: var(--color-text-muted);
-            font-size: 0.88em;
-            letter-spacing: 0.02em;
-        }
-
-        .card--tagline {
-            padding: 12px 24px;
-        }
-
-        .card--tagline p {
-            margin: 0;
-            font-style: italic;
-            color: var(--color-text-muted);
-            font-size: 1em;
-        }
-
-        .card--link {
-            padding: 10px 20px;
-            margin: 0;
-        }
-
-        .card--link a {
-            font-size: 0.95em;
-        }
-
-        .card--contato {
-            padding: 14px 24px;
-            text-align: center;
-        }
-
-        .card--secao {
-            padding: 10px 28px;
-            margin: 0 0 var(--space-md);
-        }
-
-        .card--secao span {
-            font-size: 1em;
-            font-weight: 600;
-            letter-spacing: 0.04em;
-        }
-
-        .card--stack {
-            max-width: 500px;
-            margin: 0 auto var(--space-lg);
-        }
-
-        .card--parceiro {
-            padding: 10px 20px;
-            margin: 0;
-        }
-
-        .card--parceiro a {
-            font-size: 0.95em;
-        }
-
-        .bio-box {
-            background: var(--glass-bg-bio);
-            backdrop-filter: var(--glass-blur);
-            -webkit-backdrop-filter: var(--glass-blur);
-            border: 1px solid var(--glass-border-soft);
-            border-left: 4px solid #1D9E75;
-            border-radius: 0 var(--radius) var(--radius) 0;
-            padding: 18px 24px;
-            margin: var(--space-lg) auto;
-            max-width: 500px;
-            box-shadow: var(--shadow-soft);
-            font-size: 1.05em;
-            color: #444d56;
-            text-align: left;
-        }
-
-        .a-flor-e-a-nausea {
-            background: var(--glass-bg-light);
-            backdrop-filter: var(--glass-blur-sm);
-            -webkit-backdrop-filter: var(--glass-blur-sm);
-            border: 1px solid var(--glass-border-soft);
-            border-radius: var(--radius);
-            padding: 24px 28px;
-            margin: 30px auto;
-            max-width: 500px;
-            box-shadow: var(--shadow-soft);
-            display: flex;
-            gap: var(--space-md);
-            align-items: flex-start;
-            text-align: left;
-        }
-
-        .a-flor-e-a-nausea .quote-mark {
-            font-family: Georgia, serif;
-            font-size: 52px;
-            line-height: 1;
-            color: #d0d7de;
-            flex-shrink: 0;
-            margin-top: -8px;
-        }
-
-        .a-flor-e-a-nausea .quote-body {
-            font-style: italic;
-            color: var(--color-text-muted);
-        }
-
-        .carlos-drummond-de-andrade {
-            display: block;
-            margin-top: 10px;
-            font-style: normal;
-        }
-
-        .eu {
-            text-align: center;
-        }
-
-        .selos {
-            margin-bottom: 20px;
-        }
-
-        .selos img {
-            margin: 2px 1px;
-            vertical-align: middle;
-        }
-
-        article {
-            background: var(--glass-bg);
-            backdrop-filter: var(--glass-blur);
-            -webkit-backdrop-filter: var(--glass-blur);
-            border: 1px solid var(--glass-border);
-            border-radius: var(--radius);
-            padding: 22px 26px;
-            margin: var(--space-md) auto;
-            max-width: 500px;
-            box-shadow: var(--shadow-card);
-            position: relative;
-            overflow: hidden;
-            transition: box-shadow 0.2s ease, transform 0.2s ease;
-        }
-
-        article::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            border-radius: var(--radius) var(--radius) 0 0;
-            background: var(--accent-roxo);
-        }
-
-        article:hover {
-            box-shadow: var(--shadow-card-hover);
-            transform: translateY(-2px);
-        }
-
-        article h3 a {
-            color: var(--color-link);
-        }
-
-        article p {
-            margin: 6px 0;
-        }
-
-        .parceiros {
-            display: flex;
-            gap: var(--space-lg);
-            justify-content: center;
-            margin: var(--space-md) 0;
-        }
-
-        .parceiros a {
-            font-size: 0.95em;
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 24px 14px;
-            }
-
-            .fc--row {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .bio-box,
-            .a-flor-e-a-nausea,
-            article,
-            .card--stack {
-                max-width: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="fc">
-        <div class="float-box verde card--avatar">
-            <picture>
-                <source srcset="https://victorgabriel.dev/paz-amor-e-coding.webp" type="image/webp">
-                <img src="https://victorgabriel.dev/paz-amor-e-coding.jpg" alt="Victor Gabriel" width="300" height="300" fetchpriority="high">
-            </picture>
+    <div class="prancha">
+        <div class="frame carimbo">
+            <div class="inner">
+                <div class="carimbo-topo">
+                    <div class="carimbo-id">
+                        <h1>Victor Gabriel 🐧</h1>
+                        <p class="headline">Arquiteto de Soluções &amp; Engenheiro Full-Cycle | Software · IA · Infra · Segurança | Especialista Linux</p>
+                    </div>
+                    <div class="carimbo-foto">
+                        <picture>
+                            <source srcset="https://victorgabriel.dev/paz-amor-e-coding.webp" type="image/webp">
+                            <img src="https://victorgabriel.dev/paz-amor-e-coding.jpg" alt="Victor Gabriel" width="300" height="300" fetchpriority="high">
+                        </picture>
+                    </div>
+                </div>
+                <div class="carimbo-rodape">
+                    <div class="celula">
+                        <a href="https://victorgabriel.dev">https://victorgabriel.dev</a>
+                    </div>
+                    <div class="celula">
+                        <em>Paz, amor e coding.</em>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="fc">
-        <div class="float-box roxo card--titulo">
-            <h1>Victor Gabriel 🐧</h1>
-            <p>Arquiteto de Soluções &amp; Engenheiro Full-Cycle | Software · IA · Infra · Segurança | Especialista Linux</p>
+        <div class="frame">
+            <div class="inner">
+                <div class="rotulo">Contato</div>
+                <div class="contato">
+                    <div><strong>GitHub</strong> <a href="https://github.com/VictorGabriel7Dev">@VictorGabriel7Dev</a></div>
+                    <div><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/victorgabriel-dev">in/victorgabriel-dev</a></div>
+                    <div><strong>WhatsApp</strong> @VictorGabriel_dev</div>
+                    <div><strong>Discord</strong> @VictorGabriel.dev</div>
+                    <div><strong>Telegram</strong> <a href="https://t.me/VictorGabriel_Dev">@VictorGabriel_Dev</a></div>
+                    <div><strong>Instagram</strong> <a href="https://www.instagram.com/VictorGabriel_Dev">@VictorGabriel_Dev</a></div>
+                    <div><strong>E-mail</strong> <a href="mailto:contato@victorgabriel.dev">contato@victorgabriel.dev</a></div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="fc">
-        <div class="float-box verde card--tagline">
-            <p>Paz, amor e coding.</p>
+        <div class="frame bio">
+            <div class="inner">
+                <p>Como arquiteto de soluções, atuo em cinco frentes integradas da engenharia: software, IA, infra, segurança e dados. Acumulo 23 anos de prática sustentados por 18 anos de imersão diária no ecossistema Linux. Como engenheiro full-cycle, projeto e implemento sistemas inteiros: do código da aplicação ao servidor que a hospeda, do esquema do banco ao firewall que o protege, dos pipelines de automação à orquestração de modelos. Trabalho com auditoria recorrente como prática rotineira, em que cada decisão vira regra documentada, cada incidente vira postmortem que protege o futuro e cada esquema é versionado e idempotente. Carrego a convicção operacional de que documentação, código, dados e operação devem caminhar como uma única narrativa coerente, em que tudo que está documentado precisa estar rigorosamente aplicado e tudo que está aplicado precisa estar rigorosamente documentado.</p>
+            </div>
         </div>
-    </div>
-    <div class="fc fc--row">
-        <div class="float-box azul card--link">
-            <a href="https://victorgabriel.dev">https://victorgabriel.dev</a>
+        <div class="frame poema">
+            <div class="inner">
+                <div class="aspa">"</div>
+                <div class="verso">
+                    Sua cor não se percebe.<br>
+                    Suas pétalas não se abrem.<br>
+                    Seu nome não está nos livros.<br>
+                    É feia. Mas é realmente uma flor.
+                    <span class="autor">— Carlos Drummond de Andrade, A flor e a náusea</span>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="fc">
-        <div class="float-box amber card--contato">
-            <div class="float-box-label">Contato</div>
-            <div class="eu"><strong>GitHub:</strong> <a href="https://github.com/VictorGabriel7Dev">@VictorGabriel7Dev</a></div>
-            <div class="eu"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/victorgabriel-dev">in/victorgabriel-dev</a></div>
-            <div class="eu"><strong>WhatsApp:</strong> @VictorGabriel_dev</div>
-            <div class="eu"><strong>Discord:</strong> @VictorGabriel.dev</div>
-            <div class="eu"><strong>Telegram:</strong> <a href="https://t.me/VictorGabriel_Dev">@VictorGabriel_Dev</a></div>
-            <div class="eu"><strong>Instagram:</strong> <a href="https://www.instagram.com/VictorGabriel_Dev">@VictorGabriel_Dev</a></div>
-            <div class="eu"><strong>E-mail:</strong> <a href="mailto:contato@victorgabriel.dev">contato@victorgabriel.dev</a></div>
+        <div class="secao">
+            <div class="rotulo">Trabalhos</div>
+            <article class="frame">
+                <div class="inner">
+                    <h3><a href="https://www.imoveislucas.com.br">Imóveis Lucas</a></h3>
+                    <p>Site e catálogo de imóveis de alto padrão — casas em condomínio em Lagoa Santa (MG) e apartamentos em São Paulo — com painel administrativo próprio para gerenciar os anúncios. Desenvolvido na Inovamind.</p>
+                    <p class="tags"><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>Nginx</code> <code>Cloudflare</code></p>
+                    <p class="acoes"><a href="https://victorgabriel.dev/trabalhos/#imoveis-lucas">📄 Detalhes</a> · <a href="https://www.imoveislucas.com.br">🌐 imoveislucas.com.br</a></p>
+                </div>
+            </article>
+            <article class="frame">
+                <div class="inner">
+                    <h3><a href="https://itabiraeregiao.com.br">Itabira e Região</a></h3>
+                    <p>Portal que reúne, em um só lugar e atualizado automaticamente, as notícias publicadas pelos veículos de Itabira (MG) e região — com espaço para os leitores sugerirem pautas. Desenvolvido na Inovamind.</p>
+                    <p class="tags"><code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>RSS/Scraping</code> <code>Nginx</code> <code>Cloudflare</code></p>
+                    <p class="acoes"><a href="https://victorgabriel.dev/trabalhos/#itabira-e-regiao">📄 Detalhes</a> · <a href="https://itabiraeregiao.com.br">🌐 itabiraeregiao.com.br</a></p>
+                </div>
+            </article>
+            <article class="frame">
+                <div class="inner">
+                    <h3><a href="https://bikemaniaitabira.com.br">Bike Mania Itabira</a></h3>
+                    <p>Loja online da Bike Mania Itabira (MG) — bicicletas, peças e acessórios de ciclismo — com catálogo, carrinho, área do cliente e painel administrativo próprio. Desenvolvido na Inovamind.</p>
+                    <p class="tags"><code>Python</code> <code>FastAPI</code> <code>Jinja2</code> <code>PostgreSQL</code> <code>Nginx</code> <code>Cloudflare</code></p>
+                    <p class="acoes"><a href="https://victorgabriel.dev/trabalhos/#bike-mania-itabira">📄 Detalhes</a> · <a href="https://bikemaniaitabira.com.br">🌐 bikemaniaitabira.com.br</a></p>
+                </div>
+            </article>
         </div>
-    </div>
-    <div class="bio-box">
-        Como arquiteto de soluções, atuo em cinco frentes integradas da engenharia: software, IA, infra, segurança e dados. Acumulo 23 anos de prática sustentados por 18 anos de imersão diária no ecossistema Linux. Como engenheiro full-cycle, projeto e implemento sistemas inteiros: do código da aplicação ao servidor que a hospeda, do esquema do banco ao firewall que o protege, dos pipelines de automação à orquestração de modelos. Trabalho com auditoria recorrente como prática rotineira, em que cada decisão vira regra documentada, cada incidente vira postmortem que protege o futuro e cada esquema é versionado e idempotente. Carrego a convicção operacional de que documentação, código, dados e operação devem caminhar como uma única narrativa coerente, em que tudo que está documentado precisa estar rigorosamente aplicado e tudo que está aplicado precisa estar rigorosamente documentado.
-    </div>
-    <div class="a-flor-e-a-nausea">
-        <div class="quote-mark">"</div>
-        <div class="quote-body">
-            Sua cor não se percebe.<br>
-            Suas pétalas não se abrem.<br>
-            Seu nome não está nos livros.<br>
-            É feia. Mas é realmente uma flor.
-            <span class="carlos-drummond-de-andrade">— Carlos Drummond de Andrade, A flor e a náusea</span>
+        <div class="secao">
+            <div class="rotulo">Projetos</div>
+            <article class="frame">
+                <div class="inner">
+                    <h3><a href="https://victorgabriel.dev/projetos/cambio-novadax">Câmbio NovaDax</a></h3>
+                    <p>Consultor de cotações e custos de envio de criptomoedas via NovaDax, direto no terminal.<br>
+                       Calcula cotação atual, taxa de rede e o custo real para comprar e enviar qualquer cripto.</p>
+                    <p class="tags"><code>Python</code> <code>CLI</code> <code>Zero dependências</code> <code>AGPL-3.0</code></p>
+                    <p class="acoes"><a href="https://victorgabriel.dev/projetos/cambio-novadax">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/cambio-novadax">💻 GitHub</a></p>
+                </div>
+            </article>
+            <article class="frame">
+                <div class="inner">
+                    <h3><a href="https://victorgabriel.dev/projetos/telegram-antispam-bot">Telegram Anti Spam Bot</a></h3>
+                    <p>Bot de moderação anti-spam para grupos do Telegram.<br>
+                       Anti-spam moderation bot for Telegram groups.</p>
+                    <p class="tags"><code>Python</code> <code>Telegram</code> <code>Telethon MTProto</code> <code>AGPL-3.0</code></p>
+                    <p class="acoes"><a href="https://victorgabriel.dev/projetos/telegram-antispam-bot">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/telegram-antispam-bot">💻 GitHub</a></p>
+                </div>
+            </article>
+            <article class="frame">
+                <div class="inner">
+                    <h3><a href="https://victorgabriel.dev/projetos/webscraper-github-user">WebScraper GitHub User</a></h3>
+                    <p>Exibe os repositórios favoritados (★) e a lista de usuários seguidos de qualquer perfil do GitHub, direto no terminal — sem token, sem API, sem dependências externas.</p>
+                    <p class="tags"><code>Python</code> <code>CLI</code> <code>Web Scraping</code> <code>Zero dependências</code> <code>AGPL-3.0</code></p>
+                    <p class="acoes"><a href="https://victorgabriel.dev/projetos/webscraper-github-user">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/webscraper-github-user">💻 GitHub</a></p>
+                </div>
+            </article>
+            <article class="frame">
+                <div class="inner">
+                    <h3><a href="https://victorgabriel.dev/projetos/OpenFinance-Dashboard">OpenFinance Dashboard</a></h3>
+                    <p>Consolidador financeiro multi-banco em C++ para Linux e Windows que exibe contas, cartões de crédito e autorizações Pix de todos os bancos vinculados via OpenFinance em uma única tela desktop.</p>
+                    <p class="tags"><code>C++</code> <code>OpenFinance</code> <code>Linux</code> <code>Windows</code> <code>Desktop</code></p>
+                    <p class="acoes"><a href="https://victorgabriel.dev/projetos/OpenFinance-Dashboard">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/OpenFinance-Dashboard">💻 GitHub</a></p>
+                </div>
+            </article>
         </div>
-    </div>
-    <div class="fc">
-        <div class="float-box roxo card--secao">
-            <span>Trabalhos</span>
-        </div>
-    </div>
-    <article>
-        <h3><a href="https://www.imoveislucas.com.br">Imóveis Lucas</a></h3>
-        <p>Site e catálogo de imóveis de alto padrão — casas em condomínio em Lagoa Santa (MG) e apartamentos em São Paulo — com painel administrativo próprio para gerenciar os anúncios. Desenvolvido na Inovamind.</p>
-        <p><code>React</code> · <code>FastAPI</code> · <code>PostgreSQL</code> · <code>Nginx</code> · <code>Cloudflare</code></p>
-        <p><a href="https://victorgabriel.dev/trabalhos/#imoveis-lucas">📄 Detalhes</a> · <a href="https://www.imoveislucas.com.br">🌐 imoveislucas.com.br</a></p>
-    </article>
-    <article>
-        <h3><a href="https://itabiraeregiao.com.br">Itabira e Região</a></h3>
-        <p>Portal que reúne, em um só lugar e atualizado automaticamente, as notícias publicadas pelos veículos de Itabira (MG) e região — com espaço para os leitores sugerirem pautas. Desenvolvido na Inovamind.</p>
-        <p><code>Python</code> · <code>FastAPI</code> · <code>PostgreSQL</code> · <code>RSS/Scraping</code> · <code>Nginx</code> · <code>Cloudflare</code></p>
-        <p><a href="https://victorgabriel.dev/trabalhos/#itabira-e-regiao">📄 Detalhes</a> · <a href="https://itabiraeregiao.com.br">🌐 itabiraeregiao.com.br</a></p>
-    </article>
-    <article>
-        <h3><a href="https://bikemaniaitabira.com.br">Bike Mania Itabira</a></h3>
-        <p>Loja online da Bike Mania Itabira (MG) — bicicletas, peças e acessórios de ciclismo — com catálogo, carrinho, área do cliente e painel administrativo próprio. Desenvolvido na Inovamind.</p>
-        <p><code>FastAPI</code> · <code>Jinja2</code> · <code>PostgreSQL</code> · <code>Nginx</code> · <code>Cloudflare</code></p>
-        <p><a href="https://victorgabriel.dev/trabalhos/#bike-mania-itabira">📄 Detalhes</a> · <a href="https://bikemaniaitabira.com.br">🌐 bikemaniaitabira.com.br</a></p>
-    </article>
-    <div class="fc">
-        <div class="float-box roxo card--secao">
-            <span>Projetos</span>
-        </div>
-    </div>
-    <article>
-        <h3><a href="https://victorgabriel.dev/projetos/cambio-novadax">Câmbio NovaDax</a></h3>
-        <p>Consultor de cotações e custos de envio de criptomoedas via NovaDax, direto no terminal.<br>
-           Calcula cotação atual, taxa de rede e o custo real para comprar e enviar qualquer cripto.</p>
-        <p><code>Python</code> · <code>CLI</code> · <code>Zero dependências</code> · <code>AGPL-3.0</code></p>
-        <p><a href="https://victorgabriel.dev/projetos/cambio-novadax">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/cambio-novadax">💻 GitHub</a></p>
-    </article>
-    <article>
-        <h3><a href="https://victorgabriel.dev/projetos/telegram-antispam-bot">Telegram Anti Spam Bot</a></h3>
-        <p>Bot de moderação anti-spam para grupos do Telegram.<br>
-           Anti-spam moderation bot for Telegram groups.</p>
-        <p><code>Python</code> · <code>Telegram</code> · <code>Telethon MTProto</code> · <code>AGPL-3.0</code></p>
-        <p><a href="https://victorgabriel.dev/projetos/telegram-antispam-bot">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/telegram-antispam-bot">💻 GitHub</a></p>
-    </article>
-    <article>
-        <h3><a href="https://victorgabriel.dev/projetos/webscraper-github-user">WebScraper GitHub User</a></h3>
-        <p>Exibe os repositórios favoritados (★) e a lista de usuários seguidos de qualquer perfil do GitHub, direto no terminal — sem token, sem API, sem dependências externas.</p>
-        <p><code>Python</code> · <code>CLI</code> · <code>Web Scraping</code> · <code>Zero dependências</code> · <code>AGPL-3.0</code></p>
-        <p><a href="https://victorgabriel.dev/projetos/webscraper-github-user">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/webscraper-github-user">💻 GitHub</a></p>
-    </article>
-    <article>
-        <h3><a href="https://victorgabriel.dev/projetos/OpenFinance-Dashboard">OpenFinance Dashboard</a></h3>
-        <p>Consolidador financeiro multi-banco em C++ para Linux e Windows que exibe contas, cartões de crédito e autorizações Pix de todos os bancos vinculados via OpenFinance em uma única tela desktop.</p>
-        <p><code>C++</code> · <code>OpenFinance</code> · <code>Linux</code> · <code>Windows</code> · <code>Desktop</code></p>
-        <p><a href="https://victorgabriel.dev/projetos/OpenFinance-Dashboard">📄 Página</a> · <a href="https://github.com/VictorGabriel7Dev/OpenFinance-Dashboard">💻 GitHub</a></p>
-    </article>
-    <div class="float-box azul card--stack">
-        <div class="float-box-label">Stack &amp; Ferramentas</div>
-        <div class="selos">
+        <div class="frame">
+            <div class="inner">
+                <div class="rotulo">Stack &amp; Ferramentas</div>
+                <div class="selos">
             <img src="https://img.shields.io/badge/-Bash-4EAA25?logo=gnubash&logoColor=white&style=flat" alt="Bash">
             <img src="https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white&style=flat" alt="C++">
             <img src="https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat" alt="CSS3">
@@ -731,15 +398,20 @@
             <img src="https://img.shields.io/badge/-WordPress-21759B?logo=wordpress&logoColor=white&style=flat" alt="WordPress">
             <img src="https://img.shields.io/badge/-Mercado%20Livre-FFE600?logo=mercadolibre&logoColor=black&style=flat" alt="Mercado Livre">
             <img src="https://img.shields.io/badge/-Mercado%20Pago-00B1EA?logo=mercadopago&logoColor=white&style=flat" alt="Mercado Pago">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="fc fc--row">
-        <div class="float-box amber card--parceiro">
-            <a href="https://inovamind.dev" target="_blank">Inovamind.dev</a><br>
-            <a href="https://thalesfernandes.dev" target="_blank">ThalesFernandes.dev</a><br>
-            <a href="https://itabiraeregiao.com.br" target="_blank">Itabiraeregiao.com.br</a><br>
-            <a href="https://imoveislucas.com.br" target="_blank">ImoveisLucas.com.br</a><br>
-            <a href="https://bikemaniaitabira.com.br" target="_blank">BikeManiaItabira.com.br</a>
+        <div class="frame">
+            <div class="inner">
+                <div class="rotulo">Parceiros</div>
+                <div class="parceiros">
+                    <a href="https://www.inovamind.dev" target="_blank">Inovamind.dev</a>
+                    <a href="https://thalesfernandes.dev" target="_blank">ThalesFernandes.dev</a>
+                    <a href="https://itabiraeregiao.com.br" target="_blank">Itabiraeregiao.com.br</a>
+                    <a href="https://www.imoveislucas.com.br" target="_blank">ImoveisLucas.com.br</a>
+                    <a href="https://bikemaniaitabira.com.br" target="_blank">BikeManiaItabira.com.br</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

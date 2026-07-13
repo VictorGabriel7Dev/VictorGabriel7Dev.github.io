@@ -213,7 +213,7 @@ Portal que reúne, em um só lugar e atualizado automaticamente, as notícias pu
 
 Loja online da Bike Mania Itabira (MG) — bicicletas, peças e acessórios de ciclismo — com catálogo, carrinho, área do cliente e painel administrativo próprio. Desenvolvido na Inovamind.
 
-`FastAPI` · `Jinja2` · `PostgreSQL` · `Nginx` · `Cloudflare`
+`Python` · `FastAPI` · `Jinja2` · `PostgreSQL` · `Nginx` · `Cloudflare`
 
 [🌐 bikemaniaitabira.com.br](https://bikemaniaitabira.com.br) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
 
@@ -254,3 +254,7 @@ Consolidador financeiro multi-banco em C++ para Linux e Windows que exibe contas
 `C++` · `OpenFinance` · `Linux` · `Windows` · `Desktop`
 
 [📄 Página](https://victorgabriel.dev/projetos/OpenFinance-Dashboard) · [💻 GitHub](https://github.com/VictorGabriel7Dev/OpenFinance-Dashboard)
+
+## Licença
+
+Conteúdo **proprietário da Inovamind** — todos os direitos reservados. Uso, cópia, distribuição, modificação ou criação de obras derivadas por qualquer pessoa ou entidade **externa à Inovamind** são proibidos, assim como usar este conteúdo — **inclusive via Claude Code ou qualquer outra IA** — para treinar, fundamentar (grounding/RAG) ou combinar com trabalho externo à Inovamind ou sem relevância interna direta. Componentes open-source de terceiros embutidos seguem suas licenças originais. Termos completos em [`LICENSE`](LICENSE).
