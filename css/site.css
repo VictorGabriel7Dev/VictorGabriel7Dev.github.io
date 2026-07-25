@@ -713,6 +713,17 @@ nav .nav-right {
     filter: saturate(0.9);
 }
 
+.screenshots figure {
+    margin: 0;
+}
+
+.screenshots figcaption {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+}
+
 .table-wrap {
     overflow-x: auto;
 }

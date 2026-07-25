@@ -109,10 +109,32 @@
       <section>
         <h2>Screenshots</h2>
         <div class="screenshots">
-          <a href="OpenFinance-Dashboard-2026_03_27-18_09_31.png" target="_blank"><img src="OpenFinance-Dashboard-2026_03_27-18_09_31.png" alt="OpenFinance Dashboard"></a>
-          <a href="OpenFinance-Dashboard-2026_03_27-18_09_37.png" target="_blank"><img src="OpenFinance-Dashboard-2026_03_27-18_09_37.png" alt="OpenFinance Dashboard"></a>
-          <a href="OpenFinance-Dashboard-2026_03_27-18_09_43.png" target="_blank"><img src="OpenFinance-Dashboard-2026_03_27-18_09_43.png" alt="OpenFinance Dashboard"></a>
+          <figure>
+            <a href="OpenFinance-Dashboard-2026_07_23-08_34_16.png" target="_blank"><img src="OpenFinance-Dashboard-2026_07_23-08_34_16.png" alt="Visão Resumo: patrimônio total, distribuição por banco e grade de contas" loading="lazy" decoding="async" width="1920" height="1080"></a>
+            <figcaption>Resumo — patrimônio consolidado, distribuição por banco e contas</figcaption>
+          </figure>
+          <figure>
+            <a href="OpenFinance-Dashboard-2026_07_23-08_34_25.png" target="_blank"><img src="OpenFinance-Dashboard-2026_07_23-08_34_25.png" alt="Visão Resumo com a seção de cartões de crédito expandida, mostrando bandeira e final de cada cartão" loading="lazy" decoding="async" width="1920" height="1080"></a>
+            <figcaption>Resumo — cartões de crédito</figcaption>
+          </figure>
+          <figure>
+            <a href="OpenFinance-Dashboard-2026_07_23-08_35_58.png" target="_blank"><img src="OpenFinance-Dashboard-2026_07_23-08_35_58.png" alt="Visão Painel: tabela por banco com permissões, agência, última atualização e saldo/limite, com totalizadores no topo" loading="lazy" decoding="async" width="1920" height="1080"></a>
+            <figcaption>Painel — tabela densa com totalizadores</figcaption>
+          </figure>
+          <figure>
+            <a href="OpenFinance-Dashboard-2026_07_23-08_37_02.png" target="_blank"><img src="OpenFinance-Dashboard-2026_07_23-08_37_02.png" alt="Visão Painel expandida em árvore, com os lançamentos do extrato de cada conta" loading="lazy" decoding="async" width="1920" height="1080"></a>
+            <figcaption>Painel — extrato recente por conta</figcaption>
+          </figure>
+          <figure>
+            <a href="OpenFinance-Dashboard-2026_07_23-08_35_14.png" target="_blank"><img src="OpenFinance-Dashboard-2026_07_23-08_35_14.png" alt="Visão Foco: detalhe de um banco com permissões, contas, cartões e histórico de faturas por vencimento" loading="lazy" decoding="async" width="1920" height="1080"></a>
+            <figcaption>Foco — detalhe do banco: contas, cartões e faturas</figcaption>
+          </figure>
+          <figure>
+            <a href="OpenFinance-Dashboard-2026_07_23-08_35_45.png" target="_blank"><img src="OpenFinance-Dashboard-2026_07_23-08_35_45.png" alt="Visão Foco em tema escuro, com histórico de faturas pagas e extrato recente" loading="lazy" decoding="async" width="1920" height="1080"></a>
+            <figcaption>Foco — histórico de faturas e extrato (tema escuro)</figcaption>
+          </figure>
         </div>
+        <p>Capturas com os valores ocultos pelo modo de privacidade embutido.</p>
       </section>
 
       <section>
@@ -121,12 +143,26 @@
         <p><strong>Contas PF e PJ</strong></p>
         <p>Consolidação entre contas Pessoa Física (CPF) e contas Pessoa Jurídica (CNPJ).</p>
 
-        <p><strong>Visão consolidada por banco</strong></p>
-        <p>Cada instituição financeira é exibida em um widget individual contendo:</p>
+        <p><strong>Três visões da mesma base</strong></p>
+        <p>A mesma consolidação pode ser exibida em três layouts, alternáveis a qualquer momento:</p>
+        <table>
+          <thead>
+            <tr><th>Visão</th><th>Uso</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Painel</strong></td><td>Tabela densa agrupada por banco, com totalizadores no topo e extrato expansível conta a conta</td></tr>
+            <tr><td><strong>Foco</strong></td><td>Lista de bancos à esquerda e o detalhe completo da instituição selecionada à direita</td></tr>
+            <tr><td><strong>Resumo</strong></td><td>Cartões visuais com patrimônio total, distribuição por banco e blocos de contas e cartões</td></tr>
+          </tbody>
+        </table>
+
+        <p><strong>Dados por instituição</strong></p>
+        <p>Cada instituição financeira exibe:</p>
         <ul>
           <li><strong>Contas:</strong> número da conta, tipo (corrente, poupança, pagamento) e saldo</li>
           <li><strong>Cartões de crédito:</strong> número do cartão, bandeira (Visa, Mastercard, Elo, American Express), limite total e saldo atual</li>
           <li><strong>Pix:</strong> indicação de autorização de uso e em qual conta está vinculada</li>
+          <li><strong>Permissões:</strong> quais consentimentos estão ativos naquela instituição</li>
         </ul>
 
         <p><strong>Totalizadores globais</strong></p>
@@ -143,6 +179,7 @@
             <tr><th>Filtro</th><th>Descrição</th></tr>
           </thead>
           <tbody>
+            <tr><td><strong>CPF · PJ</strong></td><td>Alterna entre a sessão Pessoa Física, a Pessoa Jurídica ou ambas somadas</td></tr>
             <tr><td><strong>Tudo</strong></td><td>Exibe todos os bancos vinculados</td></tr>
             <tr><td><strong>Contas</strong></td><td>Apenas bancos com ao menos uma conta ativa</td></tr>
             <tr><td><strong>Cartões</strong></td><td>Apenas bancos com ao menos um cartão de crédito</td></tr>
@@ -152,7 +189,13 @@
         </table>
 
         <p><strong>Extrato recente</strong></p>
-        <p>Exibição e ocultação do extrato recente de todas as contas com um único comando.</p>
+        <p>Exibição e ocultação do extrato recente de todas as contas com um único comando. As transações capturadas ficam arquivadas localmente, então o histórico permanece disponível mesmo quando a instituição deixa de retorná-lo.</p>
+
+        <p><strong>Atualização sob demanda</strong></p>
+        <p>Cada banco, conta e cartão pode ser recarregado individualmente, e cada item mostra a data e a hora da sua última atualização.</p>
+
+        <p><strong>Tema e privacidade</strong></p>
+        <p>Alternância entre tema claro e escuro, e um modo que oculta todos os valores monetários — útil para apresentações, suporte e capturas de tela.</p>
 
         <p><strong>Relatório exportável</strong></p>
         <p>Geração de relatório completo com todas as informações de todos os bancos, contas e cartões de crédito — pronto para auditoria, conciliação ou arquivamento.</p>
@@ -168,7 +211,8 @@
             <tr><td>Linguagem</td><td>C++</td></tr>
             <tr><td>Plataformas</td><td>Linux · Windows</td></tr>
             <tr><td>Integração</td><td>OpenFinance Brasil</td></tr>
-            <tr><td>Interface</td><td>Desktop nativo</td></tr>
+            <tr><td>Interface</td><td>Desktop nativo (Qt6)</td></tr>
+            <tr><td>Armazenamento</td><td>Cache local para reabertura instantânea e histórico persistente</td></tr>
             <tr><td>Exportação</td><td>Relatório em arquivo</td></tr>
           </tbody>
         </table>
