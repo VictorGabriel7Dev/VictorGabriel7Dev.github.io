@@ -1,0 +1,72 @@
+LICENÇA PROPRIETÁRIA - INOVAMIND
+Versão 1.0 · Vigente desde 2026-07-05
+Copyright (c) 2026 Inovamind. Todos os direitos reservados.
+
+Titular: INOVAMIND CONSULTORIA E DESENVOLVIMENTO LTDA, inscrita no CNPJ sob o
+nº 62.907.327/0001-07 ("Inovamind").
+
+Este diretório e todo o seu conteúdo (código-fonte, documentação, arquivos
+`CLAUDE.md`, configurações, dados e quaisquer artefatos aqui versionados) são
+propriedade exclusiva da Inovamind e constituem informação confidencial e
+segredo de negócio da empresa.
+
+1. PROIBIÇÃO DE USO EXTERNO
+   É rigorosamente proibido, sem autorização escrita prévia da Inovamind, a
+   qualquer pessoa ou entidade externa à Inovamind:
+   (a) usar, executar ou consultar o conteúdo para qualquer finalidade que não
+       seja a operação interna da própria Inovamind;
+   (b) copiar, reproduzir, publicar, distribuir, sublicenciar ou divulgar,
+       total ou parcialmente, por qualquer meio;
+   (c) modificar, adaptar, traduzir ou criar obras derivadas;
+   (d) fazer engenharia reversa ou extrair dados/segredos daqui contidos.
+
+2. PROIBIÇÃO DE USO POR SISTEMAS DE IA
+   É expressamente proibido usar este conteúdo - inclusive por meio do Claude
+   Code ou de qualquer outro agente, modelo ou ferramenta de inteligência
+   artificial - para treinar, alimentar, fundamentar (grounding/RAG), combinar
+   ou embasar qualquer trabalho, resposta ou artefato que seja externo à
+   Inovamind ou que não tenha relevância interna direta para a Inovamind. O
+   conteúdo não pode ser mesclado, contextualizado ou correlacionado com
+   material sem vínculo interno legítimo.
+
+3. TERCEIROS (COMPONENTES OPEN-SOURCE EMBUTIDOS)
+   Componentes de terceiros eventualmente incluídos ou distribuídos junto ao
+   projeto (ex.: bibliotecas MIT/ISC/BSD/Apache/OFL) permanecem sob suas
+   licenças originais, que devem ser respeitadas. Esta licença NÃO relicencia
+   nem se aplica a esses componentes. Quando presente, o arquivo
+   `THIRD-PARTY-LICENSES.txt` retém os avisos de copyright exigidos. Esta
+   licença proprietária cobre exclusivamente o conteúdo original da Inovamind.
+
+4. SEM CONCESSÃO DE DIREITOS
+   Nenhum direito, licença ou permissão é concedido por implicação, preclusão
+   ou de outra forma, salvo o expressamente autorizado por escrito pela
+   Inovamind. A posse ou o acesso a este material não confere qualquer direito
+   sobre ele.
+
+5. AUSÊNCIA DE GARANTIA
+   O conteúdo é fornecido "no estado em que se encontra", sem garantias de
+   qualquer natureza. A Inovamind não se responsabiliza por danos decorrentes
+   de uso não autorizado.
+
+6. VIGÊNCIA E RESCISÃO
+   Quaisquer permissões eventualmente concedidas pela Inovamind são precárias e
+   revogáveis a qualquer tempo, a exclusivo critério da Inovamind. A rescisão ou
+   revogação não prejudica as obrigações de confidencialidade e de não-uso, que
+   subsistem indefinidamente. Cessadas as permissões, todo o conteúdo em posse
+   do destinatário deve ser devolvido ou destruído.
+
+7. AUTONOMIA DAS CLÁUSULAS
+   A eventual invalidade ou inexequibilidade de qualquer cláusula desta licença
+   não afeta as demais, que permanecem em pleno vigor e efeito.
+
+8. LEGISLAÇÃO E FORO
+   Esta licença é regida e interpretada pelas leis da República Federativa do
+   Brasil. Fica eleito o foro da Comarca de Itabira, Estado de Minas Gerais,
+   com renúncia expressa a qualquer outro, por mais privilegiado que seja, para
+   dirimir quaisquer controvérsias dela decorrentes.
+
+Violações serão tratadas na máxima extensão permitida pela legislação
+aplicável, incluindo a legislação de propriedade intelectual e de proteção a
+segredo de negócio.
+
+Contato: contato@inovamind.dev
