@@ -155,8 +155,31 @@ code {
 .carimbo-id {
     padding: 30px 28px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+}
+
+.carimbo-id-texto {
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 0;
+}
+
+.carimbo-avatar {
+    flex: 0 0 auto;
+    display: block;
+}
+
+.carimbo-avatar img {
+    display: block;
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 1px solid var(--linha);
+    filter: saturate(0.72) contrast(1.06);
 }
 
 .carimbo-foto {
@@ -892,6 +915,12 @@ nav .nav-right {
 
     .carimbo-id {
         padding: 40px 36px;
+        gap: 26px;
+    }
+
+    .carimbo-avatar img {
+        width: 104px;
+        height: 104px;
     }
 
     .carimbo-foto {
@@ -921,6 +950,12 @@ nav .nav-right {
 
     .carimbo-id {
         padding: 22px;
+        gap: 16px;
+    }
+
+    .carimbo-avatar img {
+        width: 68px;
+        height: 68px;
     }
 
     .carimbo-rodape,
