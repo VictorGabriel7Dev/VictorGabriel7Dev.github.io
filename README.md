@@ -8,7 +8,7 @@
 - **GitHub:** [@VictorGabriel7Dev](https://github.com/VictorGabriel7Dev)
 - **LinkedIn:** [in/victorgabriel-dev](https://www.linkedin.com/in/victorgabriel-dev)
 - **WhatsApp:** [@VictorGabriel_Dev](https://wa.me/@VictorGabriel_Dev)
-- **Discord:** @VictorGabriel.dev
+- **Discord:** [@VictorGabriel.dev](https://discord.com/users/1481407654458036265)
 - **Telegram:** [@VictorGabriel_Dev](https://t.me/VictorGabriel_Dev)
 - **Instagram:** [@VictorGabriel_Dev](https://www.instagram.com/VictorGabriel_Dev)
 - **E-mail:** [contato@victorgabriel.dev](mailto:contato@victorgabriel.dev)
@@ -26,10 +26,6 @@ Como arquiteto de soluções, atuo em cinco frentes integradas da engenharia: so
   É feia. Mas é realmente uma flor.</i><br>
   Carlos Drummond de Andrade, A flor e a náusea
 </p>
-
----
-
-[Inovamind.dev](https://inovamind.dev) | [ThalesFernandes.dev](https://thalesfernandes.dev) | [Itabiraeregiao.com.br](https://itabiraeregiao.com.br) | [ImoveisLucas.com.br](https://imoveislucas.com.br) | [BikeManiaItabira.com.br](https://bikemaniaitabira.com.br) | [NexFert.com.br](https://nexfert.com.br)
 
 ---
 
@@ -237,15 +233,22 @@ Como arquiteto de soluções, atuo em cinco frentes integradas da engenharia: so
 
 ## Trabalhos
 
-### [Imóveis Lucas](https://www.imoveislucas.com.br)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Site e catálogo de imóveis de alto padrão: casas em condomínio em Lagoa Santa (MG) e apartamentos em São Paulo, com painel administrativo próprio para gerenciar os anúncios. Desenvolvido na Inovamind.
+**[Imóveis Lucas](https://www.imoveislucas.com.br)**
+
+Site e catálogo de imóveis de alto padrão: casas em condomínio em Lagoa Santa (MG) e apartamentos em São Paulo, com painel administrativo próprio. Desenvolvido na Inovamind.
 
 `React` · `FastAPI` · `PostgreSQL` · `Nginx` · `Cloudflare`
 
-[🌐 imoveislucas.com.br](https://www.imoveislucas.com.br) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
+[🌐 www.imoveislucas.com.br](https://www.imoveislucas.com.br) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
 
-### [Itabira e Região](https://itabiraeregiao.com.br)
+</td>
+<td width="50%" valign="top">
+
+**[Itabira e Região](https://itabiraeregiao.com.br)**
 
 Portal que reúne, em um só lugar e atualizado automaticamente, as notícias publicadas pelos veículos de Itabira (MG) e região, com espaço para os leitores sugerirem pautas. Desenvolvido na Inovamind.
 
@@ -253,7 +256,12 @@ Portal que reúne, em um só lugar e atualizado automaticamente, as notícias pu
 
 [🌐 itabiraeregiao.com.br](https://itabiraeregiao.com.br) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
 
-### [Bike Mania Itabira](https://bikemaniaitabira.com.br)
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[Bike Mania Itabira](https://bikemaniaitabira.com.br)**
 
 Loja online da Bike Mania Itabira (MG): bicicletas, peças e acessórios de ciclismo, com catálogo, carrinho, área do cliente e painel administrativo próprio. Desenvolvido na Inovamind.
 
@@ -261,7 +269,10 @@ Loja online da Bike Mania Itabira (MG): bicicletas, peças e acessórios de cicl
 
 [🌐 bikemaniaitabira.com.br](https://bikemaniaitabira.com.br) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
 
-### [NexFert](https://nexfert.com.br)
+</td>
+<td width="50%" valign="top">
+
+**[NexFert](https://nexfert.com.br)**
 
 Plataforma logtech do agro: marketplace que conecta quem tem carga a quem tem caminhão, com cotação aberta, rastreamento ao vivo e entrega confirmada por QR. Site institucional no ar; apps nativos (Android/iOS) e painel/API em construção. Desenvolvido na Inovamind.
 
@@ -269,29 +280,67 @@ Plataforma logtech do agro: marketplace que conecta quem tem carga a quem tem ca
 
 [🌐 nexfert.com.br](https://nexfert.com.br) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
 
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[Inovamind](https://www.inovamind.dev)**
+
+Site da Inovamind, consultoria de automação e IA para pequenas e médias empresas: funcionários virtuais 24/7, processos otimizados e integrações sob medida.
+
+`Python` · `FastAPI` · `Jinja2` · `PostgreSQL` · `Nginx` · `Cloudflare`
+
+[🌐 www.inovamind.dev](https://www.inovamind.dev) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
+
+</td>
+<td width="50%" valign="top">
+
+**[Thales Fernandes](https://thalesfernandes.dev)**
+
+Portfólio de Thales Fernandes, desenvolvedor: código limpo e soluções reais, com Python, Java e SQL.
+
+`HTML` · `CSS` · `JavaScript` · `Nginx` · `Cloudflare`
+
+[🌐 thalesfernandes.dev](https://thalesfernandes.dev) · [📄 Detalhes](https://victorgabriel.dev/trabalhos/)
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## Projetos
 
-### [Câmbio NovaDax](https://victorgabriel.dev/projetos/cambio-novadax)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Consultor de cotações e custos de envio de criptomoedas via NovaDax, direto no terminal.  
-Calcula cotação atual, taxa de rede e o custo real para comprar e enviar qualquer cripto.
+**[Câmbio NovaDax](https://victorgabriel.dev/projetos/cambio-novadax)**
+
+Consultor de cotações e custos de envio de criptomoedas via NovaDax, direto no terminal. Calcula cotação atual, taxa de rede e o custo real para comprar e enviar qualquer cripto.
 
 `Python` · `CLI` · `Zero dependências` · `AGPL-3.0`
 
 [📄 Página](https://victorgabriel.dev/projetos/cambio-novadax) · [💻 GitHub](https://github.com/VictorGabriel7Dev/cambio-novadax)
 
-### [Telegram Anti Spam Bot](https://victorgabriel.dev/projetos/telegram-antispam-bot)
+</td>
+<td width="50%" valign="top">
 
-Bot de moderação anti-spam para grupos do Telegram.  
-Anti-spam moderation bot for Telegram groups.
+**[Telegram Anti Spam Bot](https://victorgabriel.dev/projetos/telegram-antispam-bot)**
+
+Bot de moderação anti-spam para grupos do Telegram. Anti-spam moderation bot for Telegram groups.
 
 `Python` · `Telegram` · `Telethon MTProto` · `AGPL-3.0`
 
 [📄 Página](https://victorgabriel.dev/projetos/telegram-antispam-bot) · [💻 GitHub](https://github.com/VictorGabriel7Dev/telegram-antispam-bot)
 
-### [WebScraper GitHub User](https://victorgabriel.dev/projetos/webscraper-github-user)
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[WebScraper GitHub User](https://victorgabriel.dev/projetos/webscraper-github-user)**
 
 Exibe os repositórios favoritados (★) e a lista de usuários seguidos de qualquer perfil do GitHub, direto no terminal, sem token, sem API, sem dependências externas.
 
@@ -299,13 +348,20 @@ Exibe os repositórios favoritados (★) e a lista de usuários seguidos de qual
 
 [📄 Página](https://victorgabriel.dev/projetos/webscraper-github-user) · [💻 GitHub](https://github.com/VictorGabriel7Dev/webscraper-github-user)
 
-### [OpenFinance Dashboard](https://victorgabriel.dev/projetos/OpenFinance-Dashboard)
+</td>
+<td width="50%" valign="top">
+
+**[OpenFinance Dashboard](https://victorgabriel.dev/projetos/OpenFinance-Dashboard)**
 
 Consolidador financeiro multi-banco em C++ para Linux e Windows que exibe contas, cartões de crédito e autorizações Pix de todos os bancos vinculados via OpenFinance em uma única tela desktop.
 
 `C++` · `OpenFinance` · `Linux` · `Windows` · `Desktop`
 
 [📄 Página](https://victorgabriel.dev/projetos/OpenFinance-Dashboard) · [💻 GitHub](https://github.com/VictorGabriel7Dev/OpenFinance-Dashboard)
+
+</td>
+</tr>
+</table>
 
 ## Licença
 
